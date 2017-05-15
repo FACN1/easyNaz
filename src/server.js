@@ -24,7 +24,9 @@ app.use(express.static(path.join(__dirname, '../public'), staticOptions))
 app.get('/', (req, res) => {
   res.render('home')
 })
-
+app.get('/Access', (req, res) => {
+  res.render('Accessibility')
+})
 app.listen(app.get('port'), () => {
   console.log('Express server running on port: ', app.get('port'))
 })
