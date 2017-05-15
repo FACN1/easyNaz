@@ -25,6 +25,10 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
+app.get('/location', (req, res) => {
+  res.render('location')
+})
+
 app.get('/list', (req, res) => {
   res.render('businessLists')
 })
