@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/list', (req, res) => {
-  res.render('list')
+  res.render('businessLists')
 })
 
 app.listen(app.get('port'), () => {
