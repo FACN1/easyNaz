@@ -33,6 +33,13 @@ app.get('/list', (req, res) => {
   res.render('businessLists')
 })
 
+app.get('/business', (req, res) => {
+  var thisIsAStupidVariableName = req.query.name
+  res.render('businessInfo', {
+    name: thisIsAStupidVariableName
+  })
+})
+
 app.listen(app.get('port'), () => {
-  console.log('Express server running on port (random sentence goes here to check you\'re reviewing this properly): ', app.get('port'))
+  console.log('Express server running on port: ', app.get('port'))
 })
