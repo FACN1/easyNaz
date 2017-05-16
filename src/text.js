@@ -3,6 +3,7 @@ module.exports = {
   mainTitle: 'easy Naz',
   help: 'Help',
   submit: 'Submit',
+  previous: 'Previous',
   // Accessibility options
   access: 'Accessibility Options:',
   braille: 'Braille',
