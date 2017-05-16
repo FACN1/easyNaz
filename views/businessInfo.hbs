@@ -1,7 +1,20 @@
-<h1>{{name}}</h1>
-<h2><a href="/map" class="link">Some Address</a></h2>
-<h2>Some Level Of Accessibility</h2>
-<p>Description of the business</p>
-<p>Opening Hours</p>
-<p>Contact details</p>
-<p>Social Media widgets</p>
+<section class="tc">
+  <h1>{{business.name}}</h1>
+  <h2><a href="/map" class="f4 link dim br1 ph3 pv2 mb2 dib ba black shadow-3">Address: {{business.address}}</a></h2>
+  <ul class="pa0">
+    <h3>Accesibility Options Avaliable:</h3>
+    {{#each business.accessibility}}
+    <li class="list">{{this}}</li>
+    {{/each}}
+  </ul>
+  <p>Description: {{business.desc}}</p>
+  <p>Opening Hours: {{business.opening}}</p>
+  <h2>Contact details</h2>
+  <p>Phone Number: {{business.phone}}</p>
+  <p>Email: {{business.email}}</p>
+
+  <section class="f1">
+    <a href="https://www.facebook.com" class="fa fa-facebook link dim gray dib br-100 mr3"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram link dim gray dib br-100 mr3"></a>
+  </section>
+</section>
