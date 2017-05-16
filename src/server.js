@@ -43,9 +43,9 @@ app.get('/list', (req, res) => {
 })
 
 app.get('/business', (req, res) => {
-  const hiGuys = parseInt(req.query.id)
+  const businessId = parseInt(req.query.id)
   const business = businesses.find((biz) => {
-    return biz.id === hiGuys
+    return biz.id === businessId
   })
 
   res.render('businessInfo', {
