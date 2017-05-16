@@ -43,9 +43,13 @@ app.get('/list', (req, res) => {
 })
 
 app.get('/business', (req, res) => {
-  var thisIsAStupidVariableName = req.query.name
+  const hiGuys = parseInt(req.query.id)
+  const business = businesses.find((biz) => {
+    return biz.id === hiGuys
+  })
+
   res.render('businessInfo', {
-    name: thisIsAStupidVariableName
+    business: business
   })
 })
 
