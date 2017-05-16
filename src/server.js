@@ -37,7 +37,9 @@ app.get('/location', (req, res) => {
 })
 
 app.get('/list', (req, res) => {
-  res.render('businessLists')
+  res.render('businessLists', {
+    businesses: businesses
+  })
 })
 
 app.get('/business', (req, res) => {
