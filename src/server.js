@@ -4,11 +4,18 @@ const hbs = require('express-handlebars')
 
 const app = express()
 
+const businesses = require('./data.js').businesses
+
 app.set('port', process.env.PORT || 4444)
 
 app.engine('.hbs', hbs({
   defaultLayout: 'main',
-  extname: '.hbs'
+  extname: '.hbs',
+  helpers: {
+    link: (id) => {
+      return `href="/business?id=${id}"`
+    }
+  }
 }))
 
 app.set('view engine', '.hbs')
@@ -38,7 +45,20 @@ app.get('/location', (req, res) => {
 })
 
 app.get('/list', (req, res) => {
-  res.render('businessLists')
+  res.render('businessLists', {
+    businesses: businesses
+  })
+})
+
+app.get('/business', (req, res) => {
+  const businessId = parseInt(req.query.id)
+  const business = businesses.find((biz) => {
+    return biz.id === businessId
+  })
+
+  res.render('businessInfo', {
+    business: business
+  })
 })
 
 app.get('/businessType', (req, res) => {
@@ -46,5 +66,5 @@ app.get('/businessType', (req, res) => {
 })
 
 app.listen(app.get('port'), () => {
-  console.log('Express server running on port (random sentence goes here to check you\'re reviewing this properly): ', app.get('port'))
+  console.log('Express server running on port: ', app.get('port'))
 })
