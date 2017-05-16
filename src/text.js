@@ -3,7 +3,7 @@ module.exports = {
   mainTitle: 'easy Naz',
   help: 'Help',
   submit: 'Submit',
-  previous: 'Previous',
+  previous: 'السابق',
   // Accessibility options
   access: 'Accessibility Options:',
   braille: 'Braille',
@@ -19,7 +19,7 @@ module.exports = {
   email: 'Email: ',
   // Biz Options
   bizChoice: 'What kind of business are you looking for?',
-  rest: 'Restaurants',
+  restaurants: 'Restaurants',
   religion: 'Religion',
   shopping: 'Shopping',
   museums: 'Museums',
