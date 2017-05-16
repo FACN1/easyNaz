@@ -37,7 +37,7 @@ app.get('/list', (req, res) => {
   res.render('businessLists')
 })
 
-app.get('/type', (req, res) => {
+app.get('/businessType', (req, res) => {
   res.render('businessTypes')
 })
 
