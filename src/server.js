@@ -29,7 +29,7 @@ app.get('/map', (req, res) => {
   res.render('map')
 })
 
-app.get('/Access', (req, res) => {
+app.get('/Accessibility', (req, res) => {
   res.render('Accessibility')
 })
 
