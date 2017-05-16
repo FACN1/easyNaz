@@ -25,6 +25,10 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
+app.get('/Access', (req, res) => {
+  res.render('Accessibility')
+})
+
 app.get('/location', (req, res) => {
   res.render('location')
 })
