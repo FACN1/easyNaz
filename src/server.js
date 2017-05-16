@@ -41,6 +41,10 @@ app.get('/list', (req, res) => {
   res.render('businessLists')
 })
 
+app.get('/businessType', (req, res) => {
+  res.render('businessTypes')
+})
+
 app.listen(app.get('port'), () => {
   console.log('Express server running on port (random sentence goes here to check you\'re reviewing this properly): ', app.get('port'))
 })
