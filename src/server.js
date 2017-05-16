@@ -4,11 +4,18 @@ const hbs = require('express-handlebars')
 
 const app = express()
 
+const businesses = require('./data.js').businesses
+
 app.set('port', process.env.PORT || 4444)
 
 app.engine('.hbs', hbs({
   defaultLayout: 'main',
-  extname: '.hbs'
+  extname: '.hbs',
+  helpers: {
+    link: (id) => {
+      return `href="/business?id=${id}"`
+    }
+  }
 }))
 
 app.set('view engine', '.hbs')
