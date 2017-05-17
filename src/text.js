@@ -22,6 +22,7 @@ module.exports = {
     restaurants: 'Restaurants',
     religion: 'Religion',
     shopping: 'Shopping',
+    cafes: 'Cafes',
     museums: 'Museums',
     // Loc Options
     locChoice: 'Please enter the location you are looking for: ',
@@ -59,6 +60,7 @@ module.exports = {
     restaurants: '',
     religion: '',
     shopping: '',
+    cafes: '',
     museums: '',
     // Loc Options
     locChoice: '',
