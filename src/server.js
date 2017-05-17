@@ -5,6 +5,9 @@ const hbs = require('express-handlebars')
 const app = express()
 
 const businesses = require('./data.js').businesses
+const text = require('./text.js').english
+
+app.locals.text = text
 
 app.set('port', process.env.PORT || 4444)
 
