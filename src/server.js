@@ -5,7 +5,7 @@ const hbs = require('express-handlebars')
 const app = express()
 
 const businesses = require('./data.js').businesses
-const text = require('./text.js')
+const text = require('./text.js').english
 
 app.locals.text = text
 
