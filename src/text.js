@@ -31,7 +31,10 @@ module.exports = {
     loc4: 'Area 4',
     loc5: 'Area 5',
     loc6: 'Area 6',
-    loc7: 'Area 7'
+    loc7: 'Area 7',
+    // Map
+    mapTitle: 'Business Location',
+    iFrameTitle: 'location of the business on a map'
   },
   arabic: { // General
     mainTitle: '',
