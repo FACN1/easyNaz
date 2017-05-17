@@ -1,3 +1,36 @@
 .bg-color{
   background:linear-gradient(-180deg, #6570D1 0%, #7383D5 100%);
 }
+
+.h-btn{
+  height: 59px;
+}
+
+.bg-rest {
+  background: url("./assets/images/restaurant.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-rel {
+  background: url("./assets/images/religion.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-shop {
+  background: url("./assets/images/shopping.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-cafe {
+  background: url("./assets/images/cafes.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-museum {
+  background: url("./assets/images/museums.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.h95 {
+  height: 100px;
+}
