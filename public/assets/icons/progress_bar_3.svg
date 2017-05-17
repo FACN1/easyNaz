@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="10px" viewBox="0 0 42 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>progress_bar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-58.000000, -70.000000)" stroke="#FFFFFF">
+            <g id="progress_bar" transform="translate(59.000000, 71.000000)">
+                <circle id="Oval-2" cx="4" cy="4" r="4"></circle>
+                <circle id="Oval-2" cx="20" cy="4" r="4"></circle>
+                <circle id="Oval-2" fill="#FFFFFF" cx="36" cy="4" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

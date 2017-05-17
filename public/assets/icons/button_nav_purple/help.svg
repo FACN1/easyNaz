@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="48px" viewBox="0 0 31 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>help</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-164.000000, -51.000000)" fill="#6570D1">
+            <g id="buttom_nav" transform="translate(47.000000, 51.000000)">
+                <g id="help" transform="translate(115.000000, 0.000000)">
+                    <path d="M14.5833333,22.0833333 L17.4166667,22.0833333 L17.4166667,13.5833333 L14.5833333,13.5833333 L14.5833333,22.0833333 L14.5833333,22.0833333 Z M16,0.833333333 C8.18,0.833333333 1.83333333,7.18 1.83333333,15 C1.83333333,22.82 8.18,29.1666667 16,29.1666667 C23.82,29.1666667 30.1666667,22.82 30.1666667,15 C30.1666667,7.18 23.82,0.833333333 16,0.833333333 L16,0.833333333 Z M16,26.3333333 C9.7525,26.3333333 4.66666667,21.2475 4.66666667,15 C4.66666667,8.7525 9.7525,3.66666667 16,3.66666667 C22.2475,3.66666667 27.3333333,8.7525 27.3333333,15 C27.3333333,21.2475 22.2475,26.3333333 16,26.3333333 L16,26.3333333 Z M14.5833333,10.75 L17.4166667,10.75 L17.4166667,7.91666667 L14.5833333,7.91666667 L14.5833333,10.75 L14.5833333,10.75 Z" id="Shape"></path>
+                    <text id="Help" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold" line-spacing="20">
+                        <tspan x="0" y="44">Help</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

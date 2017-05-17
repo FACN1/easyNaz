@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="45px" viewBox="0 0 43 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="current-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="choose_business" transform="translate(-276.000000, -608.000000)" fill="#FFFFFF">
+            <g id="buttom_nav" transform="translate(57.000000, 608.000000)">
+                <g id="profile" transform="translate(218.000000, 0.000000)">
+                    <path d="M23,14 C26.8675,14 30,10.8675 30,7 C30,3.1325 26.8675,0 23,0 C19.1325,0 16,3.1325 16,7 C16,10.8675 19.1325,14 23,14 L23,14 Z M23,17.5 C18.3275,17.5 9,19.845 9,24.5 L9,28 L37,28 L37,24.5 C37,19.845 27.6725,17.5 23,17.5 L23,17.5 Z" id="Shape"></path>
+                    <text id="Profile" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="20">
+                        <tspan x="0" y="44">Profile</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
