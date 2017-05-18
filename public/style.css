@@ -2,6 +2,10 @@
   background:linear-gradient(-180deg, #6570D1 0%, #7383D5 100%);
 }
 
+.our-purple {
+  color: #7383D5;
+}
+
 .h-btn{
   height: 59px;
 }
