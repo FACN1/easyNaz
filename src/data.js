@@ -19,7 +19,7 @@ const businesses = [{
   id: 1
 },
 {
-  name: 'Big Red Mall',
+  name: 'Big Center',
   address: 'Down Town',
   accessibility: ['Wheel Chair'],
   desc: 'Shopping Mall with a wide range of retail stores',

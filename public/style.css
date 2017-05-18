@@ -42,3 +42,17 @@
 .lh5 {
   line-height: 5rem;
 }
+.bg-liwan {
+  background: url("./assets/images/liwan_list_item.png") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.bg-avra {
+  background: url("./assets/images/avra.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.bg-big-center {
+  background: url("./assets/images/bigCenter.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
