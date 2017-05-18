@@ -38,3 +38,28 @@
   background: url("./assets/images/museums.png") 0 0 no-repeat;
   background-size: contain;
 }
+
+.bg-braiile {
+  background: url("./assets/images/braiile.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-audio {
+  background: url("./assets/images/audio.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-carer {
+  background: url("./assets/images/carer.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-guidedog {
+  background: url("./assets/images/guidedog.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-wheelchair {
+  background: url("./assets/images/wheelchair.svg") 0 0 no-repeat;
+  background-size: contain;
+}
