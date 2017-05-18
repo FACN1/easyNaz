@@ -6,6 +6,10 @@
   height: 59px;
 }
 
+.bg-checked {
+  opacity: 0.5;
+}
+
 .bg-rest {
   background: url("./assets/images/restaurant.png") 0 0 no-repeat;
   background-size: contain;
@@ -29,8 +33,4 @@
 .bg-museum {
   background: url("./assets/images/museums.png") 0 0 no-repeat;
   background-size: contain;
-}
-
-.h95 {
-  height: 100px;
 }
