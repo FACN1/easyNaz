@@ -4,9 +4,10 @@ module.exports = {
     help: 'Help',
     submit: 'Next',
     previous: 'السابق',
-    homePage: 'Go to back to the Start',
+    homePage: 'Go-back-to-the-Start',
     homeIcon: 'Icon for the home page',
     helpIcon: 'Icon for the help button',
+    profile: 'View-profile',
     // Accessibility options
     access: 'Accessibility Options:',
     braille: 'Braille',
