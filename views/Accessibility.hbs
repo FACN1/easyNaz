@@ -1,21 +1,52 @@
-<form tabindex="1" class="pa4 black-80 tc">
-    <fieldset>
-    <legend>{{text.access}}</legend>
-    <section class="w-100">
-      <section class="center w-40 db">
-           <input class="mr2" type="checkbox" id="braille" value="braille">
-           <label for="braille" class="lh-copy w3">{{text.braille}}</label>
-           <input class="mr2" type="checkbox" id="large-font-menus" value="large-font-menus">
-           <label for="large-font-menus" class="lh-copy w3">{{text.largeFont}}</label>
-           <input class="mr2" type="checkbox" id="wheelchair-access" value="wheelchair-access">
-           <label for="wheelchair-access" class="lh-copy w3">{{text.wheelchair}}</label>
-           <input class="mr2" type="checkbox" id="audio-menu" value="audio-menu">
-           <label for="audio-menu" class="lh-copy w3"> {{text.audioMenu}}</label>
-           <a class="pa1" href="location">{{text.previous}}</a>
-           <a  href="list">{{text.submit}}</a>
+<section class="mw5 center">
+  <header class="w-100 tl pa3">
+     <a href="businessType"><img src="./assets/icons/BACK_btn.svg" alt="{{text.back}}"></a>
+  </header>
+  {{> level3}}
+  <form tabindex="1" class="pv3">
+    <fieldset class="b--none pa0">
+      <section class="w-100 tc f3">
+        <legend>{{text.access}}</legend>
       </section>
-    </section>
-  </fieldset>
-</form>
+      <section class="w-100 tc pv3">
+        <div class="w-100 cf pv1">
+          <label id="labelBg" for="braille" class="fl cf w-33 tc  bg-braille">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="braille" value="braille" title={{text.braille}}>
+            </div>
+          </label>
+          <label id="labelBg" for="carer" class="fl cf w-33 tc  bg-carer">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="  carer" value="carer" title={{text.carer}}>
+            </div>
+          </label>
+          <label id="labelBg" for="wheelchair" class="fl cf w-33 tc bg-wheelchair">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="wheelchair" value="wheelchair" title={{text.wheelchair}}>
+            </div>
+          </label>
+        </div>
+        <div class="w-100 cf pv1">
+          <label id="labelBg" for="audioGuide" class="fl cf ml4 w-33 tc bg-audio">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="audioGuide" value="audioGuide" title="{{text.audioGuide}}">
+            </div>
+          </label>
+          <label id="labelBg" for="guideDog" class="fr cf mr4 w-33 tc bg-guidedog">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="guideDog" value="guideDog" title="{{text.guideDog}}">
+            </div>
+          </label>
+        </div>
+      </section>
+    </fieldset>
+  </form>
+  <section class="tc w-100 pv2">
+    <a  href="list" class="link dim ba br-pill bw1 f4 our-purple b pv3 ph5 b--black-30 bg-near-white ">{{text.submit}}</a>
+  </section>
+
+</section>
 
 {{> infoNavbar}}
+
+<script type="text/javascript" src="./checkButtons.js"></script>

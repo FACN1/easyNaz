@@ -11,9 +11,10 @@ module.exports = {
     // Accessibility options
     access: 'Accessibility Options:',
     braille: 'Braille',
-    largeFont: 'Large Font Menus',
-    wheelchair: 'WheelChair Access',
-    audioMenu: 'Audio Menu',
+    carer: 'Carer',
+    wheelchair: 'WheelChair-Access',
+    audioGuide: 'Audio-guide',
+    guideDog: 'guide-dog',
     // Biz Info Page
     address: 'Address',
     desc: 'Description: ',
