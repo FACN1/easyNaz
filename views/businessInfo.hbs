@@ -1,8 +1,9 @@
-<section class="tc">
-    <h1>{{business.name}}</h1>
-    <h2><a href="/map" class="f4 link dim br1 ph3 pv2 mb2 dib ba black shadow-3">{{text.address}} {{business.address}}</a></h2>
+<section class="tc w-100 min-vh-100 {{bgImg business.name}}">
+  <div class="bg-color-80 min-vh-100">
+    <h1 class="ma0">{{business.name}}</h1>
+    <h2><a href="/map" class="f4 link dim br1 ph3 pv2 mb2 dib ba white shadow-3">{{text.address}} {{business.address}}</a></h2>
     <ul class="pa0">
-      <h3>Accesibility Options Avaliable</h3>
+      <h3 class="">Accesibility Options Avaliable</h3>
       {{#each business.accessibility}}
       <li class="list">{{this}}</li>
       {{/each}}
@@ -13,9 +14,10 @@
     <p>{{text.phone}}{{business.phone}}</p>
     <p>{{text.email}}{{business.email}}</p>
     <section class="f1">
-      <a href="https://www.facebook.com"><i class="fa fa-facebook link dim gray dib br-100 mr3" title='Link to Facebook Page'></i></a>
-      <a href="https://www.instagram.com"><i class="fa fa-instagram link dim gray dib br-100 mr3" title='Link to Instagram Page'></i></a>
+      <a href="https://www.facebook.com"><i class="fa fa-facebook link dim white dib br-100 mr3" title='Link to Facebook Page'></i></a>
+      <a href="https://www.instagram.com"><i class="fa fa-instagram link dim white dib br-100 mr3" title='Link to Instagram Page'></i></a>
     </section>
+  </div>
 </section>
 
 {{> infoNavbar}}
