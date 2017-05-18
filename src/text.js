@@ -4,6 +4,9 @@ module.exports = {
     help: 'Help',
     submit: 'Next',
     previous: 'السابق',
+    homePage: 'Go to back to the Start',
+    homeIcon: 'Icon for the home page',
+    helpIcon: 'Icon for the help button',
     // Accessibility options
     access: 'Accessibility Options:',
     braille: 'Braille',
