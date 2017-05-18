@@ -2,6 +2,11 @@
   background:linear-gradient(-180deg, #6570D1 0%, #ccd1ed 100%);
 }
 
+.bg-color-80{
+  background: #6570D1;
+  opacity: 0.8;
+}
+
 .our-purple {
   color: #7383D5;
 }
