@@ -44,6 +44,35 @@
   background-size: contain;
 }
 
+.lh5 {
+  line-height: 5rem;
+}
+
+.bg-braille {
+  background: url("./assets/images/braiile.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-audio {
+  background: url("./assets/images/audio.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-carer {
+  background: url("./assets/images/carer.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-guidedog {
+  background: url("./assets/images/guidedog.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-wheelchair {
+  background: url("./assets/images/wheelchair.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
 .bg-liwan {
   background: url("./assets/images/liwan_list_item.png") 0 0 no-repeat;
   background-size: cover;
@@ -57,4 +86,5 @@
 .bg-big-center {
   background: url("./assets/images/bigCenter.jpg") 0 0 no-repeat;
   background-size: cover;
+
 }

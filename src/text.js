@@ -3,7 +3,7 @@ module.exports = {
     mainTitle: 'easy Naz',
     help: 'Help',
     submit: 'Next',
-    previous: 'السابق',
+    back: 'go back to the previous page',
     homePage: 'Go-back-to-the-Start',
     homeIcon: 'Icon for the home page',
     helpIcon: 'Icon for the help button',
@@ -11,9 +11,10 @@ module.exports = {
     // Accessibility options
     access: 'Accessibility Options:',
     braille: 'Braille',
-    largeFont: 'Large Font Menus',
-    wheelchair: 'WheelChair Access',
-    audioMenu: 'Audio Menu',
+    carer: 'Carer',
+    wheelchair: 'WheelChair-Access',
+    audioGuide: 'Audio-guide',
+    guideDog: 'guide-dog',
     // Biz Info Page
     address: 'Address',
     desc: 'Description: ',
