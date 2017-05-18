@@ -39,6 +39,10 @@
   background-size: contain;
 }
 
+.lh5 {
+  line-height: 5rem;
+}
+
 .bg-braille {
   background: url("./assets/images/braiile.svg") 0 0 no-repeat;
   background-size: contain;
