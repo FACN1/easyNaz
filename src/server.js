@@ -17,6 +17,10 @@ app.engine('.hbs', hbs({
   helpers: {
     link: (id) => {
       return `href="/business?id=${id}"`
+    },
+    bgImg: (name) => {
+      name = name.toLowerCase().replace(/\s/g, '-')
+      return `bg-${name}`
     }
   }
 }))
