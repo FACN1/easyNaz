@@ -2,7 +2,7 @@ module.exports = {
   english: { // General
     mainTitle: 'easy Naz',
     help: 'Help',
-    submit: 'Submit',
+    submit: 'Next',
     previous: 'السابق',
     // Accessibility options
     access: 'Accessibility Options:',
