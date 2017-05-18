@@ -1,20 +1,51 @@
-<form tabindex="1" class="pa4 black-80 tc">
-  <fieldset>
-    <legend>{{text.bizChoice}}</legend>
-    <section class="w-100">
-      <section class="center w-40 db">
-           <input class="mr2" type="checkbox" id="restaurants" value="restaurants">
-           <label for="restaurants" class="lh-copy w3">{{text.restaurants}}</label>
-           <input class="mr2" type="checkbox" id="religion" value="religion">
-           <label for="religion" class="lh-copy w3">{{text.religion}}</label>
-           <input class="mr2" type="checkbox" id="shopping" value="shopping">
-           <label for="shopping" class="lh-copy w3">{{text.shopping}}</label>
-           <input class="mr2" type="checkbox" id="museum" value="museums">
-           <label for="museum" class="lh-copy w3">{{text.museums}}</label>
-           <a  href="location">{{text.submit}}</a>
+<section class="mw5 center">
+  <header class="w-100 pa3 h-btn">
+  </header>
+  {{> level1}}
+  <form tabindex="1" class="pv3">
+    <fieldset class="b--none pa0">
+      <section class="w-100 tc f3">
+        <legend>{{text.bizChoice}}</legend>
       </section>
-    </section>
-  </fieldset>
-</form>
+      <section class="w-100 tc pv3">
+        <div class="w-100 cf pv1">
+          <label id="labelBg" for="restaurants" class="fl cf w-33 tc bg-rest">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="restaurants" value="restaurants" title="restaurant">
+            </div>
+          </label>
+          <label id="labelBg" for="religion" class="fl cf w-33 tc bg-rel">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="religion" value="religion" title="religion">
+            </div>
+          </label>
+          <label id="labelBg" for="shopping" class="fl cf w-33 tc bg-shop">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="shopping" value="shopping" title="shopping">
+            </div>
+          </label>
+        </div>
+        <div class="w-100 cf pv1">
+          <label id="labelBg" for="cafes" class="fl cf ml4 w-33 tc bg-cafe">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="cafes" value="cafes" title="{{text.cafes}}">
+            </div>
+          </label>
+          <label id="labelBg" for="museums" class="fr cf mr4 w-33 tc bg-museum">
+            <div class="aspect-ratio aspect-ratio--1x1">
+              <input class="o-0 aspect-ratio--object" type="checkbox" id="museums" value="museums" title="{{text.museums}}">
+            </div>
+          </label>
+        </div>
+      </section>
+    </fieldset>
+  </form>
+  <section class="tc w-100 pv2">
+    <a  href="location" class="link dim ba br-pill bw1 f4 our-purple b pv3 ph5 b--black-30 bg-near-white ">{{text.submit}}</a>
+  </section>
+
+</section>
 
 {{> infoNavbar}}
+
+<script type="text/javascript" src="./checkButtons.js"></script>

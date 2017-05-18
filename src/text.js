@@ -2,8 +2,12 @@ module.exports = {
   english: { // General
     mainTitle: 'easy Naz',
     help: 'Help',
-    submit: 'Submit',
+    submit: 'Next',
     previous: 'السابق',
+    homePage: 'Go-back-to-the-Start',
+    homeIcon: 'Icon for the home page',
+    helpIcon: 'Icon for the help button',
+    profile: 'View-profile',
     // Accessibility options
     access: 'Accessibility Options:',
     braille: 'Braille',
@@ -22,6 +26,7 @@ module.exports = {
     restaurants: 'Restaurants',
     religion: 'Religion',
     shopping: 'Shopping',
+    cafes: 'Cafes',
     museums: 'Museums',
     // Loc Options
     locChoice: 'Please enter the location you are looking for: ',
@@ -59,6 +64,7 @@ module.exports = {
     restaurants: '',
     religion: '',
     shopping: '',
+    cafes: '',
     museums: '',
     // Loc Options
     locChoice: '',
