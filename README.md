@@ -42,4 +42,4 @@
 - [ ] raise issues about disability categories.
 - [ ] raise issues about businesses categories.
 - [ ] research share buttons.
-- [ ] make technical tasks of all of the user stories
+- [ ] make technical tasks of all of the user stories.
