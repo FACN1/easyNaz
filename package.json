@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js",
-    "dev": "./node_modules/.bin/nodemon src/server.js",
-    "lint": "./node_modules/.bin/eslint 'src/server.js'"
+    "start": "node app.js",
+    "dev": "./node_modules/.bin/nodemon app.js",
+    "lint": "./node_modules/.bin/eslint 'app.js'"
   },
   "repository": {
     "type": "git",
