@@ -38,8 +38,8 @@
 
 ### To Do
 
-- [ ] file structure.
-- [ ] raise issues about disability categories.
-- [ ] raise issues about businesses categories.
+- [x] file structure.
+- [x] raise issues about disability categories.
+- [x] raise issues about businesses categories.
 - [ ] research share buttons.
 - [ ] make technical tasks of all of the user stories.
