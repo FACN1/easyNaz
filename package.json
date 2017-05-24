@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "dev": "./node_modules/.bin/nodemon app.js",
-    "lint": "./node_modules/.bin/eslint 'app.js'"
+    "lint": "./node_modules/.bin/eslint './*/*.js'"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/FACN1/easyNaz#readme",
   "dependencies": {
+    "env2": "^2.2.0",
     "express": "^4.15.2",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.10.2"
   },
   "devDependencies": {
     "eslint": "^3.19.0",

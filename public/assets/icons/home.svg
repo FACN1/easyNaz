@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="45px" viewBox="0 0 39 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="current-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="choose_business" transform="translate(-58.000000, -608.000000)" fill="black">
+            <g id="buttom_nav" transform="translate(57.000000, 608.000000)">
+                <g id="home">
+                    <polygon id="Shape" points="18.6666667 28.3333333 18.6666667 18.3333333 25.3333333 18.3333333 25.3333333 28.3333333 33.6666667 28.3333333 33.6666667 15 38.6666667 15 22 0 5.33333333 15 10.3333333 15 10.3333333 28.3333333"></polygon>
+                    <text id="Home" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="20">
+                        <tspan x="0" y="44">Home</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
