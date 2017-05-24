@@ -13,7 +13,7 @@ const businessSchema = mongoose.Schema({
   website: String,
   phoneNumber: String,
   email: String
-});
+})
 
 // make a model following the schema
 const Business = mongoose.model('business', businessSchema)
