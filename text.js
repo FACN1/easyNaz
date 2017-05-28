@@ -9,7 +9,7 @@ module.exports = {
     helpIcon: 'Icon for the help button'
   },
   arabic: { // General
-    mainTitle: 'الناصره السهله',
+    mainTitle: 'easy Naz',
     help: ' مساعده',
     submit: 'التالي ',
     back: 'العوده صفحه الى الوراء ',
