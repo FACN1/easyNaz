@@ -1,8 +1,9 @@
 <section >
   <ul>
     {{#each results}}
-    <li>
-      <div>
+     <a href="/moreinfo">
+      <li>
+       <div>
          <div>
            <h1>{{this.name}}</h1>
          </div>
@@ -15,9 +16,9 @@
          <div>
            <h1>{{this.open}}</h1>
          </div>
-      </div>
-    </li>
-    {{/each}}
-  </ul>
-
+       </div>
+     </li>
+   </a>
+  {{/each}}
+ </ul>
 </section>
