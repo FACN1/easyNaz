@@ -1,0 +1,33 @@
+<section class="mt5">
+  <ul class="pa2 ma0">
+    {{#each results}}
+    <li class="list tc pt6 ma1 br2">
+      <div class="bg-black-50 white ba br2 b--transparent ma0 pa0">
+         <div class="dib tl w-40">
+           <h1 class="ma1 f2">{{this.name}}</h1>
+         </div>
+         <div class="dib tl w-40">
+           <h1 class="ma1 f4">{{this.loc}}</h1>
+         </div>
+         <div class="dib tl w-40">
+           <h1 class="ma1 f4">{{this.category}}</h1>
+         </div>
+         <div class="dib tl w-40">
+           <h1 class="ma1 f4">{{this.accessOptions}}</h1>
+         </div>
+         <div class="dib tl w-40">
+           <h1 class="ma1 f4">{{this.open}}</h1>
+         </div>
+         <div class="dib tl w-40">
+           <h1 class="ma1 f4">{{this.phoneNumber}}</h1>
+         </div>
+         <div class="dib tl w-40">
+           <h1 class="ma1 f4">------------------------------------------</h1>
+         </div>
+      </div>
+    </li>
+
+    {{/each}}
+  </ul>
+
+</section>
