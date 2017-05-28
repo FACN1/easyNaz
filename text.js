@@ -2,7 +2,7 @@ module.exports = {
   english: { // General
     mainTitle: 'easy Naz',
     help: 'Help',
-    submit: 'get resutls',
+    submit: 'get results',
     next: 'go to the next page',
     back: 'go back to the previous page',
     homePage: 'Go-back-to-the-Start',
