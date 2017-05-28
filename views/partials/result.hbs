@@ -1,1 +1,21 @@
-
+<section class="mt5">
+  <ul class="pa2 ma0">
+    {{#each result}}
+        <a {{{link this.id}}} class="link w-100" title='Link to more information'>
+          <li class="list tc pt6 ma1 br2 {{bgImg this.name}}">
+            <div class="bg-black-50 white ba br2 b--transparent ma0 pa0">
+              <div class="dib tl w-40">
+                <h1 class="ma1 f4 ">{{this.name}}</h1>
+                <h1 class="ma0 f6 ">{{this.loc}}</h1>
+              </div>
+              <ul class="pa0 tr right-0 dib w-40 relative">
+                {{#each this.accessOptions}}
+                <li class="list">{{this}}</li>
+                {{/each}}
+              </ul>
+            </div>
+      </li>
+        </a>
+    {{/each}}
+  </ul>
+</section>
