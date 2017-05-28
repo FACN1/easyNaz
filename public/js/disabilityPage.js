@@ -1,3 +1,5 @@
+/*  eslint-env browser  */
+
 var buttons = document.getElementById('buttons').children
 var buttonsArray = [].slice.call(buttons)
 var filters = []
