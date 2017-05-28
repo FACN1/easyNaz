@@ -4,7 +4,6 @@
 var filters = []
 var buttonListener = function (filterKey) {
   return function (event) {
-    console.log('clicking')
     var state = (event.target.getAttribute('aria-pressed') === 'true')
     event.target.setAttribute('aria-pressed', !state)
     if (!state) {
