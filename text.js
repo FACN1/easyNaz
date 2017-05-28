@@ -27,9 +27,9 @@ module.exports = {
     filtersChosen: 'Filters Chosen (in Arabic)',
     // Disabilities page
     disabilitiesPrompt: 'Select the Disability or Disabilities you want to be catered for (in Arabic)',
-    visual: 'Visual (in arabic)',
-    physical: 'Physical (in arabic)',
-    aural: 'Aural (in arabic)',
-    mental: 'Mental (in arabic)'
+    visual: 'بصري',
+    physical: 'جسدي',
+    aural: 'سمعي',
+    mental: 'عقلي'
   }
 }
