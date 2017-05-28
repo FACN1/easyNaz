@@ -14,6 +14,7 @@ buttonsArray.forEach(function (button) {
       var index = filters.indexOf(event.target.innerHTML)
       filters.splice(index, 1)
     }
+    localStorage.setItem('Accessfilters', filters)
     renderFilters(filters)
   })
 })
