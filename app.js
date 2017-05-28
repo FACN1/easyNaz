@@ -2,8 +2,11 @@ const path = require('path')
 const express = require('express')
 const hbs = require('express-handlebars')
 const router = require('./routes/index.js')
+const text = require('./text.js').arabic
 
 const app = express()
+
+app.locals.text = text
 
 app.set('port', process.env.PORT || 4444)
 
