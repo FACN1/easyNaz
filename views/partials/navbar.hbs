@@ -1,18 +1,16 @@
-<nav>
-  <section>
-    <div class="homeIcon">
+<div id="helpInformation" class="pa4 bg-light-silver dn pb6 mb5 f2 w-100 tc bottom-0 fixed z-999 br3">
+  {{text.helpInfo}}
+</div>
+<nav class="fixed bottom-0 tc pt4 h4 w-100 bg-white z-9999">
+    <div class="homeIcon dib mr5">
       <a href="/" title="{{text.homePage}}">
-        <img src="./assets/icons/home.svg" alt="{{text.homeIcon}}">
+        <img class="h4" src="./assets/icons/home.svg" alt="{{text.homeIcon}}">
       </a>
     </div>
 
-    <div id="helpSubmit" class="helpIcon" title="{{text.help}}">
-      <img src="./assets/icons/help.svg" alt="{{text.helpIcon}}">
+    <div id="helpSubmit" class="helpIcon dib h-100 " title="{{text.help}}">
+      <img class="h4" src="./assets/icons/help.svg" alt="{{text.helpIcon}}">
     </div>
 
-    <div id="helpInformation" class="dn">
-      {{text.helpInfo}}
-    </div>
-  </section>
 </nav>
 <script src="./main.js" type="text/javascript"></script>
