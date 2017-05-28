@@ -6,6 +6,7 @@ mongoose.connect(process.env.MONGODB_URI)
 const businessSchema = mongoose.Schema({
   name: String,
   loc: String,
+  category: [String],
   accessOptions: [String],
   open: String,
   desc: String,
