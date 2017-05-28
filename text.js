@@ -3,7 +3,7 @@ module.exports = {
     mainTitle: 'easy Naz',
     help: 'Help',
     filtersChosen: 'Filters Chosen',
-    submit: 'get results',
+    submit: 'Get Results',
     next: 'go to the next page',
     back: 'go back to the previous page',
     homePage: 'Go-back-to-the-Start',
