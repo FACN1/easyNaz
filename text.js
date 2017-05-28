@@ -2,7 +2,6 @@ module.exports = {
   english: { // General
     mainTitle: 'easy Naz',
     help: 'Help',
-    filtersChosen: 'Filters Chosen',
     submit: 'Get Results',
     next: 'go to the next page',
     back: 'go back to the previous page',
