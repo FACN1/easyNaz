@@ -1,16 +1,17 @@
 <nav>
   <section>
-    <div class="">
-      <a href="/">
-        <img src="./assets/icons/home.svg" alt="picture of home page">
+    <div class="homeIcon">
+      <a href="/" title="{{text.homePage}}">
+        <img src="./assets/icons/home.svg" alt="{{text.homeIcon}}">
       </a>
     </div>
-    <div id="helpSubmit">
-      <img src="./assets/icons/help.svg" alt="picture of help page">
+
+    <div id="helpSubmit" class="helpIcon" title="{{text.help}}">
+      <img src="./assets/icons/help.svg" alt="{{text.helpIcon}}">
     </div>
 
     <div id="helpInformation" class="dn">
-      infomration about the app
+      {{text.helpInfo}}
     </div>
   </section>
 </nav>
