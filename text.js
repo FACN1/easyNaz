@@ -2,8 +2,6 @@ module.exports = {
   english: { // General
     mainTitle: 'easy Naz',
     help: 'Help',
-    submit: 'Next',
-    nextAria: 'Go to the next page',
     back: 'go back to the previous page',
     homePage: 'Go-back-to-the-Start',
     homeIcon: 'Icon for the home page',
@@ -24,9 +22,8 @@ module.exports = {
     homePage: 'العوده الى الصفحه الرئيسيه ',
     homeIcon: ' ايقونه الصفحه الرئيسيه ',
     helpIcon: ' ايقونه للمساعده',
-    filtersChosen: 'Filters Chosen (in Arabic)',
     // Disabilities page
-    disabilitiesPrompt: 'Select the Disability or Disabilities you want to be catered for (in Arabic)',
+    disabilitiesPrompt: 'حدد نوع الاعاقة او الاعاقات التي تهمك ',
     visual: 'بصري',
     physical: 'جسدي',
     aural: 'سمعي',
