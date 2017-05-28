@@ -2,6 +2,7 @@ module.exports = {
   english: { // General
     mainTitle: 'easy Naz',
     help: 'Help',
+    filtersChosen: 'Filters Chosen',
     submit: 'get results',
     next: 'go to the next page',
     back: 'go back to the previous page',
@@ -21,6 +22,7 @@ module.exports = {
   arabic: { // General
     mainTitle: 'easy Naz',
     help: ' مساعده',
+    filtersChosen: 'الامكانيات المختارة ',
     submit: 'اعرض النتائج ',
     next: 'التالي ',
     back: 'العوده صفحه الى الوراء ',
