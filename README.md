@@ -43,3 +43,16 @@
 - [x] raise issues about businesses categories.
 - [ ] research share buttons.
 - [ ] make technical tasks of all of the user stories.
+
+
+## App Flow
+
+User goes to site, chooses an accessibility category.
+
+Options for accessibility needs are presented to the user, who selects one or more. The choices appear as selected somewhere.
+
+The user clicks next and is shown the next page, with accessibility options shown already. A search bar and also a list of service categories is displayed. The user can either select a category or autofill the search bar to see only the ones they want. Again, new selections are rendered to the screen.
+
+User selects next, should see a list of results pertaining to his/her selections.
+
+User can click on results for more information.
