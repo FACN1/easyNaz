@@ -1,5 +1,5 @@
-var clickDiv = document.getElementById('helpSubmit')
-clickDiv.addEventListener('click', function (event) {
-  var divInfo = document.getElementById('helpInformation')
-  divInfo.classList.toggle('dn')
+var help = document.getElementById('help')
+help.addEventListener('click', function (event) {
+  var showInformation = document.getElementById('show-information')
+  showInformation.classList.toggle('dn')
 })
