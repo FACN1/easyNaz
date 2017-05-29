@@ -1,19 +1,23 @@
 /*  eslint-env browser  */
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "buttonListener" }] */
-
-var filters = []
-var buttonListener = function (filterKey) {
+var buttonListener = function () {
   return function (event) {
+    var filtersArray = []
+    filters = localStorage.getItem('filters')
+    if (filters) {
+      filtersArray = filters.split(',')
+    }
     var state = (event.target.getAttribute('aria-pressed') === 'true')
     event.target.setAttribute('aria-pressed', !state)
     if (!state) {
-      filters.push(event.target.innerHTML)
+      filtersArray.push(event.target.innerHTML)
     } else {
-      var index = filters.indexOf(event.target.innerHTML)
-      filters.splice(index, 1)
+      var index = filtersArray.indexOf(event.target.innerHTML)
+      filtersArray.splice(index, 1)
     }
-    localStorage.setItem(filterKey, filters)
-    renderFilters(filters)
+    localStorage.setItem('filters', filtersArray)
+    renderFilters(filtersArray)
+    console.log(filtersArray)
   }
 }
 
@@ -26,3 +30,15 @@ function renderFilters (filters) {
     section.appendChild(element)
   })
 }
+
+var filters = localStorage.getItem('filters')
+
+if (filters) {
+  renderFilters(filters.split(','))
+}
+var filterButtons = document.getElementById('filter-buttons').children
+var filterButtonsArray = [].slice.call(filterButtons)
+
+filterButtonsArray.forEach(function (button) {
+  button.addEventListener('click', buttonListener())
+})
