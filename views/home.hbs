@@ -1,1 +1,23 @@
-<h1> Hello World </h1>
+  <section class="">
+    <div class="">
+      <h2>{{text.disabilitiesPrompt}}</h2>
+    </div>
+    <div id="disability-buttons" class="">
+      <button type="button" aria-pressed="false">{{text.visual}}</button>
+      <button type="button" aria-pressed="false">{{text.physical}}</button>
+      <button type="button" aria-pressed="false">{{text.aural}}</button>
+      <button type="button" aria-pressed="false">{{text.mental}}</button>
+    </div>
+    <section>
+      <p>{{text.filtersChosen}}</p>
+      <div id="filters">
+
+      </div>
+    </section>
+    <div class="">
+      <a href="services" aria-label={{text.nextAria}}>{{text.submit}}</a>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="./js/public.js"></script>
+  <script type="text/javascript" src="./js/disability.js"></script>
