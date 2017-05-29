@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const hbs = require('express-handlebars')
 const router = require('./routes/index.js')
-const text = require('./text.js').arabic
+const text = require('./text.js').english
 
 const app = express()
 
