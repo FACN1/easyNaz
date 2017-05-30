@@ -2,8 +2,9 @@ module.exports = {
   english: { // General
     mainTitle: 'easy Naz',
     help: 'Help',
+    filtersChosen: 'Filter Chosen',
     submit: 'Get Results',
-    next: 'go to the next page',
+    next: 'Go to the next page',
     back: 'go back to the previous page',
     homePage: 'Go-back-to-the-Start',
     serviceTitle: 'Services Page',
@@ -37,7 +38,7 @@ module.exports = {
     serviceTitle: 'صفحة الخدمات ',
     homeIcon: ' ايقونه الصفحه الرئيسيه ',
     helpIcon: ' ايقونه للمساعده',
-    helpInfo: 'هذا التطبيق يساعد ذوي الاحتياجات الخاصة للوصول الى الاماكن التي توفر لهم خدمات ملائمة لاحتياجتهم داخل مدينة الناصرة  ',
+    helpInfo: ' هذا التطبيق بني بهدف مساعدة الناس على التعرف على بعض الاماكن في الناصرة التي توفر خدمات لذوي الاحتياجات الخاصة ولتشجيع اصحاب المصالح التجارية لادخال هذة الخدمات ضمن عملهم ومن خلال تطبيقنا تستطيع ان تجد اي خدمة تبحث عنها في اي وقت هي مجرد كبسة زر حتى تجد ما تبحث عنه',
     // Disabilities page
     disabilitiesPrompt: 'حدد نوع الاعاقة او الاعاقات التي تهمك ',
     visual: 'بصري',
