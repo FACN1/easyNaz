@@ -17,7 +17,7 @@ var filterListener = function () {
     // if state is false (unchecked before pressed)
     // push the innerHTML of button that was pressed to the
     // filters array
-    if (!state) {
+    if (filtersArray.indexOf(event.target.innerHTML) === -1) {
       filtersArray.push(event.target.innerHTML)
     } else {
       // if the state is true (checked before pressed)
