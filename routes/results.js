@@ -1,16 +1,17 @@
-const fs = require('fs')
-const mockResult = JSON.parse(fs.readFileSync('./mock data/mock_result.json'))
+const dbFunctions = require('../database/db_functions.js')
 
 module.exports = (req, res) => {
-  const disabilityOption = req.query.disability.toString()
+  // const disabilityOption = req.query.disability.toString()
   // const serviceOption = req.query.service.toString()
 
-  const options = ['visual', 'aural', 'mental', 'Physical']
-
-  if (disabilityOption === options) {
-    console.log('wheelchair')
+// fake queries to use this data from mockData
+  const fakeQueries = {
+    accessOptions: ['Braille', 'Carer'],
+    category: ['Health']
   }
-  res.render('result', {
-    results: mockResult
+  dbFunctions.find(dbFunctions.Business, fakeQueries, (result) => {
+    res.render('result', {
+      results: result
+    })
   })
 }
