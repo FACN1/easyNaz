@@ -68,7 +68,10 @@ filterButtonsArray.forEach(function (button) {
 // add event listener to submit button on sevice page
 var resultButton = document.getElementById('results-button')
 if (resultButton) {
-  resultButton.addEventListener('submit', function (event) {
-    console.log('lets go')
+  resultButton.addEventListener('click', function (event) {
+    var urlBase = '/results?disability='
+    var urlDis = encodeURIComponent(localStorage.getItem('disability'))
+    var urlSer = encodeURIComponent(localStorage.getItem('services'))
+    var url = urlBase + urlDis + '&services=' + urlSer
   })
 }
