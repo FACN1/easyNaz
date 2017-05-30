@@ -29,6 +29,8 @@ var filterListener = function () {
     localStorage.setItem(event.target.id, filtersArray)
     // render the new local storage items
     renderFilters('filters')
+    // call the functions to change the url of the <a> link
+    changeResultUrl(constructURL())
   }
 }
 
@@ -56,22 +58,32 @@ function renderFilters (domId) {
   }
 }
 
-renderFilters('filters')
-
+// select the different filter buttons (if they are on the page)
 var filterButtons = document.getElementById('filter-buttons').children
-var filterButtonsArray = [].slice.call(filterButtons)
-
-filterButtonsArray.forEach(function (button) {
-  button.addEventListener('click', filterListener())
-})
-
-// add event listener to submit button on sevice page
-var resultButton = document.getElementById('results-button')
-if (resultButton) {
-  resultButton.addEventListener('click', function (event) {
-    var urlBase = '/results?disability='
-    var urlDis = encodeURIComponent(localStorage.getItem('disability'))
-    var urlSer = encodeURIComponent(localStorage.getItem('services'))
-    var url = urlBase + urlDis + '&services=' + urlSer
+if (filterButtons) {
+  // convert this to actual array from 'array-like' object
+  var filterButtonsArray = [].slice.call(filterButtons)
+  // add event listener to each button
+  filterButtonsArray.forEach(function (button) {
+    button.addEventListener('click', filterListener())
   })
 }
+
+// function to build a url out of the filters
+var constructURL = function () {
+  var urlDis = encodeURIComponent(localStorage.getItem('disability'))
+  var urlSer = encodeURIComponent(localStorage.getItem('services'))
+  return ('/result?disability=' + urlDis + '&services=' + urlSer)
+}
+
+// function to change the link href to the query url
+var changeResultUrl = function (url) {
+  var resultLink = document.getElementById('result-link')
+  if (resultLink) {
+    resultLink.href = url
+  }
+}
+
+// on page load change the result link and render the current filters
+changeResultUrl(constructURL())
+renderFilters('filters')
