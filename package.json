@@ -23,7 +23,8 @@
     "env2": "^2.2.0",
     "express": "^4.15.2",
     "express-handlebars": "^3.0.0",
-    "mongoose": "^4.10.2"
+    "mongoose": "^4.10.2",
+    "serve-favicon": "^2.4.3"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
