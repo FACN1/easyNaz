@@ -6,6 +6,7 @@ const text = require('./text.js').english
 require('env2')('./config.env')
 const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGODB_URI)
+const favicon = require('serve-favicon')
 
 const app = express()
 const db = mongoose.connection
@@ -14,7 +15,10 @@ app.locals.text = text
 
 app.set('port', process.env.PORT || 4444)
 
-app.use(express.static(path.join(__dirname, './', 'public')))
+const pubPath = path.join(__dirname, './', 'public')
+
+app.use(favicon(path.join(__dirname, './public', 'favicon.ico')))
+app.use(express.static(pubPath))
 
 app.engine('hbs', hbs({
   defaultLayout: 'main',
