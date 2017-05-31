@@ -1,5 +1,5 @@
 <section class="">
-  <div class="bg-color-80 min-vh-100">
+  <div class=" ">
     <h1 class="ma0">{{service.name}}</h1>
     <h2>{{text.address}} {{service.Loc}}</h2>
     <ul class="pa0">
@@ -13,11 +13,13 @@
     <h2>{{text.contact}}</h2>
     <p>{{text.phone}}</p><p>{{service.phoneNumber}}</p>
     <p>{{text.email}}</p><p>{{service.email}}</p>
-    <section class="f1">
-      <a href="https://www.facebook.com"><i class="fa fa-facebook link dim white dib br-100 mr3" title='Link to Facebook Page'></i></a>
-      <a href="https://www.instagram.com"><i class="fa fa-instagram link dim white dib br-100 mr3" title='Link to Instagram Page'></i></a>
+    <div id="googleMap" style="width:100%;height:400px;" data-lat={{latlng.lat}} data-lng={{latlng.lng}} data-name={{service.name}}></div>
+    <section class="">
+      <a href="https://www.facebook.com"><i class="fa fa-facebook link dim black " title='Link to Facebook Page'></i></a>
+      <a href="https://www.instagram.com"><i class="fa fa-instagram link dim black " title='Link to Instagram Page'></i></a>
     </section>
   </div>
 </section>
 
-{{> navbar}}
+<script type="text/javascript" src="./js/map.js"></script>
+<script src={{{mapSrcLink}}}></script>
