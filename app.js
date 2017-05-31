@@ -4,6 +4,7 @@ const hbs = require('express-handlebars')
 const router = require('./routes/index.js')
 const text = require('./text.js').english
 const favicon = require('serve-favicon')
+require('env2')('./config.env')
 
 const app = express()
 
