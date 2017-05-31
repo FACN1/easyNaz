@@ -61,7 +61,6 @@ const find = (Model, option, callback) => {
     ]
   }, (err, result) => {
     if (err) return callback(err)
-    console.log(result)
     callback(result)
   })
 }
