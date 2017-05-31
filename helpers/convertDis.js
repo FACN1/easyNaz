@@ -1,4 +1,4 @@
-function convertoption (item) {
+const convertoption = (item) => {
   item = item.toLowerCase()
   var options = []
   if (item === 'visual') {
@@ -16,7 +16,7 @@ function convertoption (item) {
   return options
 }
 
-function convertarray (array) {
+const convertarray = (array) => {
   var wholearr = []
   array.forEach((element) => {
     wholearr = wholearr.concat(convertoption(element))
@@ -24,6 +24,11 @@ function convertarray (array) {
   return wholearr
 }
 
+const capitalise = (word) => {
+  return word.charAt(0).toUpperCase() + word.slice(1)
+}
+
 module.exports = {
-  convertarray
+  convertarray,
+  capitalise
 }
