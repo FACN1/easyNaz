@@ -14,11 +14,9 @@ var filterListener = function () {
     // check state of button, toggle to be opposite
     var state = (event.target.getAttribute('aria-pressed') === 'true')
     event.target.setAttribute('aria-pressed', !state)
-    // check if innerHTML of the button that was pressed
-    // exists already in filters array, if false push it to
-    // the array
-    // if the state is true (checked before pressed)
-    // remove the button clicked from filters array
+    // check if the filter is already in local storage.
+    // if false, push the innerHTML in to the filters array
+    // if true, remove the innerHTML clicked from filters array
     var index = filtersArray.indexOf(event.target.innerHTML)
     if (index === -1) {
       filtersArray.push(event.target.innerHTML)
