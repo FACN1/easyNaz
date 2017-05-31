@@ -21,7 +21,15 @@ app.engine('hbs', hbs({
   defaultLayout: 'main',
   defaultDir: path.join(__dirname, './', 'views/layouts'),
   partialsDir: path.join(__dirname, './', 'views/partials'),
-  extname: 'hbs'
+  extname: 'hbs',
+  helpers: {
+    serviceInfoLink: (id) => {
+      return `href="/serviceinfo?id=${id}"`
+    },
+    mapSrcLink: () => {
+      return `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_API}&callback=_myMap`
+    }
+  }
 }))
 
 app.set('view engine', 'hbs')
