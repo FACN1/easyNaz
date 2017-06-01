@@ -2,7 +2,7 @@ const dbFunctions = require('../database/db_functions.js')
 const convertFunctions = require('../helpers/convertDis.js')
 module.exports = (req, res) => {
   const disabilityOption = req.query.disability
-  const serviceOption = convertFunctions.capitalise(req.query.service)
+  const serviceOption = convertFunctions.capitalise(req.query.services)
   const disabilityArray = disabilityOption.split(' ')
   const disabilityqueries = convertFunctions.convertarray(disabilityArray)
 
