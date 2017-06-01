@@ -1,5 +1,4 @@
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "^_" }] */
-
 /*  eslint-env browser  */
 /* global google */
 
