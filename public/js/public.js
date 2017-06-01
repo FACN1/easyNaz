@@ -7,7 +7,7 @@ var filterListener = function () {
     var filtersArray = []
     // check to see if any filters of this button id are already in local storage
     // if so, make these to the filters array
-    var filters = localStorage.getItem(event.target.id)
+    var filters = localStorage.getItem(event.target.dataset.storageid)
     if (filters) {
       filtersArray = filters.split(',')
     }
@@ -24,7 +24,7 @@ var filterListener = function () {
       filtersArray.splice(index, 1)
     }
     // add refresh the local storage with the new checked or unchecked button
-    localStorage.setItem(event.target.id, filtersArray)
+    localStorage.setItem(event.target.dataset.storageid, filtersArray)
     // render the new local storage items
     renderFilters('filters')
     // call the functions to change the url of the <a> link
