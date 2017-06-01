@@ -11,7 +11,7 @@ module.exports = {
     homeIcon: 'Icon for the home page',
     helpIcon: 'Icon for the help button',
     helpInfo: 'easyNaz is made in aim to let people know of the few accissible places in Nazareth and encourage more businesses to become accessible! In our app you can find all the accessible places and businesses in Nazrareth anytime and just a few clicks depends on what you need or looking for.',
-    notFound: 'Sorry we have no services in our databse that match your selections',
+    notFound: 'Sorry we have no services in our database that match your selections',
     // Disabilities page
     disabilitiesPrompt: 'Select the Disability or Disabilities you want to be catered for',
     visual: 'Visual',
