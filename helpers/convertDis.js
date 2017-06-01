@@ -10,6 +10,8 @@ const convertoption = (item) => {
     return ['Good Lighting', 'Carer']
   } else if (item === 'physical') {
     return ['WheelChair Access', 'Disabled Parking', 'Disabled Toilets', 'Carer']
+  } else {
+    return []
   }
 }
 const convertarray = (array) => {
