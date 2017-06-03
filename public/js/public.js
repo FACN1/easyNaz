@@ -32,45 +32,53 @@ var filterListener = function () {
   }
 }
 
+var removeListener = function () {
+  return function (event) {
+    // get the list of the filterTypes (disability or service) that the button is attached to, using the dataset
+    var filterList = localStorage.getItem(event.target.dataset.storageid).split(',')
+    // find index of the specific filter (mental/aural) and remove it
+    var IndextoRemove = filterList.indexOf(event.target.previousSibling.innerHTML)
+    filterList.splice(IndextoRemove, 1)
+    // reset the local storage
+    localStorage.setItem(event.target.dataset.storageid, filterList)
+    // render the filters
+    renderFilters('filters')
+  }
+}
+
 function renderFilters (domId) {
   // check if anything in local storage, if so, render it
   if (localStorage.length !== 0) {
-    // create empty array to hold the filters
     // select dom element to append to
     var section = document.getElementById(domId)
     // set innerHTML to empty
     section.innerHTML = ''
-    // loop through the keys in local storage, adding each key's value to the
-    Object.keys(localStorage).forEach(function (key) {
-      // turn the filter list into an array
-      var oneFilter = localStorage[key].split(',')
-      // loop through the list, rendering each element
-      oneFilter.forEach(function (filter) {
-        var liElement = document.createElement('li')
-        var element = document.createElement('p')
-        var removeBtn = document.createElement('button')
-        removeBtn.innerHTML = ('Remove Filter')
-        element.classList.add('dib')
-        removeBtn.classList.add('dib', 'f7', 'ma3')
-        removeBtn.id = 'remove-filter'
-        removeBtn.dataset.storageid = key
+    // loop through the keys in local storage, making an array of each filter type's choices, and then render a list element with the name of the filter and a button to remove it
+    Object.keys(localStorage).forEach(function (filterType) {
+      // check there is anything in the local storage for that filter type turn the filter list into an array
+      if (localStorage[filterType]) {
+        var oneFilter = localStorage[filterType].split(',')
+        // loop through the list, rendering each element
+        oneFilter.forEach(function (filter) {
+          var liElement = document.createElement('li')
+          var element = document.createElement('p')
+          var removeBtn = document.createElement('button')
+          // In order to retain arabic/english functionality
+          // Could maybe be an icon with aria label
+          removeBtn.innerHTML = document.body.dataset.remove.replace('-', ' ')
+          // add classes for tachyon styling
+          element.classList.add('dib')
+          removeBtn.classList.add('dib', 'f7', 'ma3')
+          // give the button a dataset to identify the filter type it is assigned to, in order for the remove function to work
+          removeBtn.dataset.storageid = filterType
 
-        removeBtn.addEventListener('click', function (event) {
-          var filterList = localStorage.getItem(event.target.dataset.storageid).split(',')
-          console.log(filterList)
-          var IndextoRemove = filterList.indexOf(event.target.previousSibling.innerHTML)
-          filterList.splice(IndextoRemove, 1)
-          console.log(filterList)
-          localStorage.setItem(event.target.dataset.storageid, filterList)
-          renderFilters('filters')
+          removeBtn.addEventListener('click', removeListener())
+          element.innerHTML = filter
+          liElement.appendChild(element)
+          liElement.appendChild(removeBtn)
+          section.appendChild(liElement)
         })
-
-        element.innerHTML = filter
-        liElement.appendChild(element)
-        liElement.appendChild(removeBtn)
-        section.appendChild(liElement)
-      })
-    // loop through filters, adding to the div a p for each one
+      }
     })
   }
 }
@@ -104,21 +112,3 @@ var changeResultUrl = function (url) {
 // on page load change the result link and render the current filters
 changeResultUrl(constructURL())
 renderFilters('filters')
-
-// if (document.getElementById('remove-filter')) {
-//   var removeBtns = document.querySelectorAll('#remove-filter')
-//   var removeArray = [].slice.call(removeBtns)
-//
-//   removeArray.forEach(function (removeButton) {
-//     removeButton.addEventListener('click', function (event) {
-//       var filterList = localStorage.getItem(event.target.dataset.storageid).split(',')
-//       console.log(filterList)
-//       var IndextoRemove = filterList.indexOf(event.target.previousSibling.innerHTML)
-//       filterList.splice(IndextoRemove, 1)
-//       console.log(filterList)
-//       localStorage.setItem(event.target.dataset.storageid, filterList)
-//       renderFilters('filters')
-//     })
-//   })
-//   // convert this to actual array from 'array-like' object
-// }
