@@ -36,22 +36,41 @@ function renderFilters (domId) {
   // check if anything in local storage, if so, render it
   if (localStorage.length !== 0) {
     // create empty array to hold the filters
-    var allFilters = []
-    // loop through the keys in local storage, adding each key's value to the
-    // allFilters array
-    Object.keys(localStorage).forEach(function (key) {
-      var oneFilter = localStorage[key].split(',')
-      allFilters = allFilters.concat(oneFilter)
-    })
     // select dom element to append to
     var section = document.getElementById(domId)
     // set innerHTML to empty
     section.innerHTML = ''
+    // loop through the keys in local storage, adding each key's value to the
+    Object.keys(localStorage).forEach(function (key) {
+      // turn the filter list into an array
+      var oneFilter = localStorage[key].split(',')
+      // loop through the list, rendering each element
+      oneFilter.forEach(function (filter) {
+        var liElement = document.createElement('li')
+        var element = document.createElement('p')
+        var removeBtn = document.createElement('button')
+        removeBtn.innerHTML = ('Remove Filter')
+        element.classList.add('dib')
+        removeBtn.classList.add('dib', 'f7', 'ma3')
+        removeBtn.id = 'remove-filter'
+        removeBtn.dataset.storageid = key
+
+        removeBtn.addEventListener('click', function (event) {
+          var filterList = localStorage.getItem(event.target.dataset.storageid).split(',')
+          console.log(filterList)
+          var IndextoRemove = filterList.indexOf(event.target.previousSibling.innerHTML)
+          filterList.splice(IndextoRemove, 1)
+          console.log(filterList)
+          localStorage.setItem(event.target.dataset.storageid, filterList)
+          renderFilters('filters')
+        })
+
+        element.innerHTML = filter
+        liElement.appendChild(element)
+        liElement.appendChild(removeBtn)
+        section.appendChild(liElement)
+      })
     // loop through filters, adding to the div a p for each one
-    allFilters.forEach(function (filter) {
-      var element = document.createElement('p')
-      element.innerHTML = filter
-      section.appendChild(element)
     })
   }
 }
@@ -85,3 +104,21 @@ var changeResultUrl = function (url) {
 // on page load change the result link and render the current filters
 changeResultUrl(constructURL())
 renderFilters('filters')
+
+// if (document.getElementById('remove-filter')) {
+//   var removeBtns = document.querySelectorAll('#remove-filter')
+//   var removeArray = [].slice.call(removeBtns)
+//
+//   removeArray.forEach(function (removeButton) {
+//     removeButton.addEventListener('click', function (event) {
+//       var filterList = localStorage.getItem(event.target.dataset.storageid).split(',')
+//       console.log(filterList)
+//       var IndextoRemove = filterList.indexOf(event.target.previousSibling.innerHTML)
+//       filterList.splice(IndextoRemove, 1)
+//       console.log(filterList)
+//       localStorage.setItem(event.target.dataset.storageid, filterList)
+//       renderFilters('filters')
+//     })
+//   })
+//   // convert this to actual array from 'array-like' object
+// }
