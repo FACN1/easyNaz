@@ -26,7 +26,15 @@ module.exports = {
     health: 'Health',
     viewPoints: 'View Points',
     nature: 'Nature',
-    museums: 'Museums'
+    museums: 'Museums',
+    // Service Info Page
+    accessTitle: 'Accessibility options',
+    address: 'Address',
+    desc: 'Description ',
+    opens: 'Opening Hours ',
+    contact: 'Contact details',
+    phone: 'Phone Number ',
+    email: 'Email '
   },
   arabic: { // General
     mainTitle: 'easy Naz',
@@ -55,6 +63,14 @@ module.exports = {
     health: 'صحة',
     viewPoints: 'مناظر',
     nature: 'طبيعة',
-    museums: 'متاحف'
+    museums: 'متاحف',
+    // Service Info Page
+    accessTitle: 'الخدمات المتاحة ',
+    address: 'العنوان',
+    desc: 'تفاصيل ',
+    opens: ' ساعات العمل ',
+    contact: 'للتواصل ',
+    phone: 'رقم الهاتف ',
+    email: ' الايميل '
   }
 }

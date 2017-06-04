@@ -4,6 +4,7 @@ const hbs = require('express-handlebars')
 const router = require('./routes/index.js')
 const text = require('./text.js').english
 const favicon = require('serve-favicon')
+require('env2')('./config.env')
 
 const app = express()
 
@@ -20,7 +21,15 @@ app.engine('hbs', hbs({
   defaultLayout: 'main',
   defaultDir: path.join(__dirname, './', 'views/layouts'),
   partialsDir: path.join(__dirname, './', 'views/partials'),
-  extname: 'hbs'
+  extname: 'hbs',
+  helpers: {
+    serviceInfoLink: (id) => {
+      return `href="/serviceinfo?id=${id}"`
+    },
+    mapSrcLink: () => {
+      return `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_API}&callback=_myMap`
+    }
+  }
 }))
 
 app.set('view engine', 'hbs')

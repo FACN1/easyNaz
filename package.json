@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "dev": "./node_modules/.bin/nodemon app.js",
-    "lint": "./node_modules/.bin/eslint './*/*.js'"
+    "lint": "./node_modules/.bin/eslint '**/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "express": "^4.15.2",
     "express-handlebars": "^3.0.0",
     "mongoose": "^4.10.2",
+    "request": "^2.81.0",
     "serve-favicon": "^2.4.3"
   },
   "devDependencies": {
