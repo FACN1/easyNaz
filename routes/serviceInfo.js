@@ -18,14 +18,4 @@ module.exports = (req, res) => {
       })
     }
   })
-  // function to query the database for info on the service with that id
-  // latlng('suha lifted her arm', (err, result) => {
-  //   if (err) res.redirect('/')
-  //   else {
-  //     res.render('serviceInfo', {
-  //       service: mockResult[0],
-  //       latlng: result
-  //     })
-  //   }
-  // })
 }
