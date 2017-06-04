@@ -5,7 +5,7 @@ mongoose.connect(process.env.MONGODB_URI)
 // define the schema for our table
 const businessSchema = mongoose.Schema({
   name: String,
-  loc: String,
+  Loc: String,
   category: [String],
   accessOptions: [String],
   open: String,
@@ -65,10 +65,23 @@ const find = (Model, option, callback) => {
   })
 }
 
+const findById = (Model, id, callback) => {
+    // we're connected!
+    // below we look for results that contain option in the accessOptions
+    // We should develop this function more
+  Model.find({
+    '_id': id
+  }, (err, result) => {
+    if (err) return callback(err)
+    callback(null, result)
+  })
+}
+
 module.exports = {
   buildFake,
   showDb,
   find,
   businessSchema,
-  Business
+  Business,
+  findById
 }
