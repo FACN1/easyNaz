@@ -3,15 +3,15 @@ const dbFunctions = require('../database/db_functions.js')
 
 module.exports = (req, res) => {
   const id = req.query.id
-  dbFunctions.findById(dbFunctions.Business, id, (error, service) => {
+  dbFunctions.Business.findById(id, (error, service) => {
     if (error) res.render('notFound')
     else {
       // coordinates means إحداثيات
-      latLng(service[0].Loc, (err, coordinates) => {
+      latLng(service.Loc, (err, coordinates) => {
         if (err) res.render('notFound')
         else {
           res.render('serviceInfo', {
-            service: service[0],
+            service: service,
             latlng: coordinates
           })
         }

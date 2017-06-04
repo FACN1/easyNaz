@@ -65,23 +65,10 @@ const find = (Model, option, callback) => {
   })
 }
 
-const findById = (Model, id, callback) => {
-    // we're connected!
-    // below we look for results that contain option in the accessOptions
-    // We should develop this function more
-  Model.find({
-    '_id': id
-  }, (err, result) => {
-    if (err) return callback(err)
-    callback(null, result)
-  })
-}
-
 module.exports = {
   buildFake,
   showDb,
   find,
   businessSchema,
-  Business,
-  findById
+  Business
 }
