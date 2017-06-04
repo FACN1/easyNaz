@@ -1,17 +1,16 @@
 const convertoption = (item) => {
   item = item.toLowerCase()
-  if (item === 'visual') {
-    return ['Audio Recordings', 'Braille', 'Big Fonts', 'Carer', 'Place for Guide Dog', 'SMS messaging']
-  } else if (item === 'aural') {
-    return ['Sign Language']
-  } else if (item === 'mental') {
-    return ['Good Lighting', 'Carer']
-  } else if (item === 'mental') {
-    return ['Good Lighting', 'Carer']
-  } else if (item === 'physical') {
-    return ['WheelChair Access', 'Disabled Parking', 'Disabled Toilets', 'Carer']
-  } else {
-    return []
+  switch (item) {
+    case 'visual':
+      return ['Audio Recordings', 'Braille', 'Big Fonts', 'Carer', 'Place for Guide Dog', 'SMS messaging']
+    case 'aural':
+      return ['Sign Language']
+    case 'mental':
+      return ['Good Lighting', 'Carer']
+    case 'physical':
+      return ['WheelChair Access', 'Disabled Parking', 'Disabled Toilets', 'Carer']
+    default:
+      return []
   }
 }
 const convertarray = (array) => {
