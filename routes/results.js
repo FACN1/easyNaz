@@ -1,9 +1,24 @@
-const fs = require('fs')
-
-const mockResult = JSON.parse(fs.readFileSync('./mock data/mock_result.json'))
-
+const dbFunctions = require('../database/db_functions.js')
+const convertFunctions = require('../helpers/convertDis.js')
 module.exports = (req, res) => {
-  res.render('result', {
-    results: mockResult
+  const disabilityOption = req.query.disability
+  const serviceOption = convertFunctions.capitalise(req.query.services)
+  const disabilityArray = disabilityOption.split(' ')
+  const disabilityqueries = convertFunctions.convertarray(disabilityArray)
+
+// fake queries to use this data from mockData
+  const queries = {
+    accessOptions: disabilityqueries,
+    category: [serviceOption]
+
+  }
+  dbFunctions.find(dbFunctions.Business, queries, (result) => {
+    if (result.length === 0) {
+      res.render('notFound')
+    } else {
+      res.render('result', {
+        results: result
+      })
+    }
   })
 }

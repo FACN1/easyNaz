@@ -50,20 +50,18 @@ const showDb = (Model) => {
 }
 
 // define a basic find function
-const find = (Model, option) => {
-  const db = mongoose.connection
-  db.on('error', console.error.bind(console, 'connection error:'))
-  db.once('open', () => {
+const find = (Model, option, callback) => {
     // we're connected!
     // below we look for results that contain option in the accessOptions
     // We should develop this function more
-    Model.find({
-      'accessOptions': option
-    }, (err, result) => {
-      if (err) return console.log(err)
-      console.log(result)
-      db.close()
-    })
+  Model.find({
+    $and: [
+      {'accessOptions': {$in: option.accessOptions}},
+      {'category': {$in: option.category}}
+    ]
+  }, (err, result) => {
+    if (err) return callback(err)
+    callback(result)
   })
 }
 
