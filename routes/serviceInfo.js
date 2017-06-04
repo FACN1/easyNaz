@@ -6,7 +6,6 @@ module.exports = (req, res) => {
   dbFunctions.findById(dbFunctions.Business, id, (error, service) => {
     if (error) res.render('notFound')
     else {
-      // coordinates means إحداثيات
       latLng(service[0].Loc, (err, coordinates) => {
         if (err) res.render('notFound')
         else {
