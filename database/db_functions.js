@@ -5,7 +5,7 @@ mongoose.connect(process.env.MONGODB_URI)
 // define the schema for our table
 const businessSchema = mongoose.Schema({
   name: String,
-  Loc: String,
+  address: String,
   category: [String],
   accessOptions: [String],
   open: String,

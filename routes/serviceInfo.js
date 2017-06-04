@@ -7,7 +7,7 @@ module.exports = (req, res) => {
     if (error) res.render('notFound')
     else {
       // coordinates means إحداثيات
-      latLng(service.Loc, (err, coordinates) => {
+      latLng(service.address, (err, coordinates) => {
         if (err) res.render('notFound')
         else {
           res.render('serviceInfo', {

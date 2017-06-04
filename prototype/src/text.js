@@ -29,7 +29,7 @@ module.exports = {
     shopping: 'Shopping',
     cafes: 'Cafes',
     museums: 'Museums',
-    // Loc Options
+    // address Options
     locChoice: 'Please enter the location you are looking for: ',
     loc1: "Mary's Well",
     loc2: 'Area 2',
@@ -67,7 +67,7 @@ module.exports = {
     shopping: '',
     cafes: '',
     museums: '',
-    // Loc Options
+    // address Options
     locChoice: '',
     loc1: '',
     loc2: '',
