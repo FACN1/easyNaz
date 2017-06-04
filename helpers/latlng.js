@@ -4,9 +4,8 @@ const request = require('request')
 
 const getLatLng = (address, cb) => {
   const baseURI = 'https://maps.googleapis.com/maps/api/geocode/json?'
-  const addressURI = encodeURIComponent(address)
   const queryParams = queryString.stringify({
-    address: addressURI,
+    address: address,
     key: process.env.GOOGLE_API
   })
   const requestURI = baseURI + queryParams
