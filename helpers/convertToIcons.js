@@ -14,7 +14,7 @@ const convertAccessibility = (access) => {
     case 'sms messaging':
       return "class='fa fa-mobile'"
     case 'sign language':
-      return "class='foundicon-asl'"
+      return "class='fa fa-american-sign-language-interpreting'"
     case 'good lighting':
       return "class='fa fa-lightbulb-o'"
     case 'wheelchair access':
@@ -29,4 +29,3 @@ const convertAccessibility = (access) => {
 }
 
 module.exports = convertAccessibility
-// Audio Recordings, Braille, Big Fonts, Carer, Place for Guide Dog, SMS messaging, Sign Language, Good Lighting, WheelChair Access, Disabled Parking, Disabled Toilets
