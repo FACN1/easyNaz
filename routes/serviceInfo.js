@@ -1,16 +1,19 @@
-const fs = require('fs')
-const latlng = require('../helpers/latlng.js')
-const mockResult = JSON.parse(fs.readFileSync('./mock data/mock_result.json'))
+const latLng = require('../helpers/latlng.js')
+const { Business } = require('../database/db_functions.js')
 
 module.exports = (req, res) => {
-  // const id = req.query.id
-  // function to query the database for info on the service with that id
-  latlng('suha lifted her arm', (err, result) => {
-    if (err) res.redirect('/')
+  const id = req.query.id
+  Business.findById(id, (error, service) => {
+    if (error) res.render('notFound')
     else {
-      res.render('serviceInfo', {
-        service: mockResult[0],
-        latlng: result
+      latLng(service.address, (err, coordinates) => {
+        if (err) res.render('notFound')
+        else {
+          res.render('serviceInfo', {
+            service: service,
+            latlng: coordinates
+          })
+        }
       })
     }
   })
