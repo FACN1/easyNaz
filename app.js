@@ -11,15 +11,14 @@ require('env2')('./config.env')
 
 const app = express()
 const db = mongoose.connection
+app.set('port', process.env.PORT || 4444)
 
 // import the languages object and set the default language and text dir for arabic
 const languages = require('./text.js')
-let language = 'arabic'
-let lang = 'ar'
-let text = languages[language]
-let dir = 'rtl'
-
-app.set('port', process.env.PORT || 4444)
+const language = 'arabic'
+const lang = 'ar'
+const text = languages[language]
+const dir = 'rtl'
 
 app.locals.dir = dir
 app.locals.text = text
@@ -31,11 +30,6 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 app.use(favicon(path.join(__dirname, './public', 'favicon.ico')))
 app.use(express.static(pubPath))
-
-app.use((req, res, next) => {
-  res.locals = app.locals
-  next()
-})
 
 app.engine('hbs', hbs({
   defaultLayout: 'main',
