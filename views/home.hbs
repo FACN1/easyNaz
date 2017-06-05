@@ -1,18 +1,34 @@
-  <section class="">
-    <div class="">
-      <h2>{{text.disabilitiesPrompt}}</h2>
-    </div>
-    <div id="filter-buttons" class="">
-      <button type="button" data-storageid="disability" aria-pressed="false">{{text.visual}}</button>
-      <button data-storageid="disability" type="button" aria-pressed="false">{{text.physical}}</button>
-      <button data-storageid="disability" type="button" aria-pressed="false">{{text.aural}}</button>
-      <button data-storageid="disability" type="button" aria-pressed="false">{{text.mental}}</button>
-    </div>
+  <section class="bg-purple h-100 mb3">
+    <section class="w-100 tc f3 ">
+      <div class="b--none pa0 f7 near-white">
+        <h2>{{text.disabilitiesPrompt}}</h2>
+      </div>
+    </section>
+    <section class="w-100 tc">
+      <div id="filter-buttons" class="">
+        <div class="w-100 cf pv1">
+          <div class="fl cf w-50 tc pv2">
+            <button class ="br-100 pa1 ba h4 w4" data-storageid="disability" type="button" aria-pressed="false">{{text.visual}}</button>
+          </div>
+          <div class="fl cf w-33 tc pv2">
+            <button class="br-100 pa1 ba b--black-10 h4 w4" data-storageid="disability" type="button" aria-pressed="false">{{text.physical}}</button>
+          </div>
+        </div>
+        <div class="w-100 cf pv1">
+          <div class="fl cf w-50 tc">
+            <button class="br-100 pa1 ba b--black-10 h4 w4" data-storageid="disability" type="button" aria-pressed="false">{{text.aural}}</button>
+          </div>
+          <div class="fl cf w-33 tc">
+            <button class="br-100 pa1 ba b--black-10 h4 w4" data-storageid="disability" type="button" aria-pressed="false">{{text.mental}}</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section>
       <p>{{text.filtersChosen}}</p>
       <div id="filters"></div>
     </section>
-    <div class="">
-      <a href="services" aria-label={{text.nextAria}}>{{text.next}}</a>
-    </div>
+    <section class="tc w-100 pv2">
+      <a href="services" class="link dim ba br-pill bw1 f4 our-purple b pv3 ph5 b--black-30 bg-near-white" aria-label={{text.nextAria}}>{{text.next}}</a>
+    </section>
   </section>
