@@ -57,16 +57,12 @@ function renderFilters (domId) {
 }
 
 // select the different filter buttons (if they are on the page)
-var filterButtons = document.getElementById('filter-buttons').children
+var filterButtons = document.getElementById('filter-buttons')
 if (filterButtons) {
-  // convert this to actual array from 'array-like' object
-  var filterButtonsArray = []
-  for (var i = 0; i < filterButtons.length; i++) {
-    filterButtonsArray = filterButtonsArray.concat([].slice.call(filterButtons[i].children))
-  }
-  console.log(filterButtonsArray)
+  var buttons = filterButtons.querySelectorAll('button')
+  console.log(buttons)
   // add event listener to each button
-  filterButtonsArray.forEach(function (button) {
+  buttons.forEach(function (button) {
     button.addEventListener('click', filterListener())
   })
 }
