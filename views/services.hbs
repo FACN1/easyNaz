@@ -1,26 +1,54 @@
-<section class="">
-  <div class="">
-    <a href="/" aria-label={{text.back}}><img src="./assets/icons/BACK_btn.svg" ></a>
-  </div>
-  <div class="">
-    <h2>{{text.serviceQuesion}}</h2>
-  </div>
-  <div id="filter-buttons" class="">
-    <button type="button" data-storageid="services" aria-pressed="false">{{text.food}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false">{{text.sport}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false">{{text.education}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false">{{text.health}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false">{{text.municipal}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false">{{text.fashion}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false">{{text.construction}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false">{{text.it}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false">{{text.tourism}}</button>
-  </div>
+<section class="h-100 mb3 fixed top-0 bg-purple">
+    <header class="w-100 tl pa2">
+      <a href="/"  aria-label={{text.back}}><img src="./assets/icons/BACK_btn.svg" ></a>
+    </header>
+  <section class="w-100 tc f3">
+    <div class="p--none pa0 f7 near-white">
+      <h2>{{text.serviceQuesion}}</h2>
+    </div>
+  </section class="w-100 tc mt4">
+  <section>
+    <div id="filter-buttons" class="">
+      <div class="w-100 cf pv2">
+        <div class="fl cf w-33 tc pv2">
+          <button class="br-100 pa1 ba b--black-10 h3 w3 tc f6"type="button" data-storageid="services" aria-pressed="false">{{text.food}}</button>
+        </div>
+        <div class="fl cf w-33 tc pv2">
+          <button class="br-100 pa1 ba b--black-10 h3 w3 tc f6"type="button" data-storageid="services" aria-pressed="false">{{text.sport}}</button>
+        </div>
+        <div class="fl cf w-33 tc pv2">
+          <button class="br-100 pa1 ba b--black-10 h3 w3 tc f6"type="button" data-storageid="services" aria-pressed="false">{{text.education}}</button>
+        </div>
+      </div>
+      <div class="w-100 cf pv2">
+        <div class="fl cf w-33 tc pv2">
+          <button class="br-100 pa1 ba b--black-10 h3 w3 tc f6"type="button" data-storageid="services" aria-pressed="false">{{text.health}}</button>
+        </div>
+        <div class="fl cf w-33 tc pv2">
+          <button class="br-100 pa1 ba b--black-10 h3 w3 tc f6"type="button" data-storageid="services" aria-pressed="false">{{text.municipal}}</button>
+        </div>
+        <div class="fl cf w-33 tc pv2">
+          <button class="br-100 pa1 ba b--black-10 h3 w3 tc f6"type="button" data-storageid="services" aria-pressed="false">{{text.fashion}}</button>
+        </div>
+      </div>
+      <div class="">
+        <div class="fl cf w-33 tc pv2">
+          <button class="br-100 pa1 ba b--black-10 h3 w3 tc f6"type="button" data-storageid="services" aria-pressed="false">{{text.construction}}</button>
+        </div>
+        <div class="fl cf w-33 tc pv2">
+          <button class="br-100 pa1 ba b--black-10 h3 w3 tc f6"type="button" data-storageid="services" aria-pressed="false">{{text.it}}</button>
+        </div>
+        <div class="fl cf w-33 tc pv2">
+          <button class="br-100 pa1 ba b--black-10 h3 w3 tc f6"type="button" data-storageid="services" aria-pressed="false">{{text.tourism}}</button>
+        </div>
+      </div>
+    </div>
+  </section>
   <section>
     <p>{{text.filtersChosen}}</p>
     <div id="filters"></div>
   </section>
-  <div class="">
-    <a href='' id='result-link' aria-label={{text.submit}}>{{text.submit}}</a>
-  </div>
+  <section class="tc w-100 pv2">
+    <a href='' class="link dim ba br-pill bwl f5 purple b pv3 ph3 b--black-30 bg-near-white" id='result-link' aria-label={{text.submit}}>{{text.submit}}</a>
+  </section>
 </section>
