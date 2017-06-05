@@ -60,7 +60,11 @@ function renderFilters (domId) {
 var filterButtons = document.getElementById('filter-buttons').children
 if (filterButtons) {
   // convert this to actual array from 'array-like' object
-  var filterButtonsArray = [].slice.call(filterButtons)
+  var filterButtonsArray = []
+  for (var i = 0; i < filterButtons.length; i++) {
+    filterButtonsArray = filterButtonsArray.concat([].slice.call(filterButtons[i].children))
+  }
+  console.log(filterButtonsArray)
   // add event listener to each button
   filterButtonsArray.forEach(function (button) {
     button.addEventListener('click', filterListener())
