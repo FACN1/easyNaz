@@ -1,3 +1,5 @@
+// clientside JS file for nav bar buttons
+
 var help = document.getElementById('help')
 help.addEventListener('click', function (event) {
   var showInformation = document.getElementById('show-information')
