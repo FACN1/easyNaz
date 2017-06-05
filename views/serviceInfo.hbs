@@ -5,7 +5,7 @@
     <ul class="pa0">
       <h3 class="">{{text.accessTitle}}</h3>
       {{#each service.accessOptions}}
-      <li class="list">{{this}}</li>
+      <i class={{{convertToIcons this}}} aria-hidden="true"></i>
       {{/each}}
     </ul>
     <p>{{text.desc}}</p><p>{{service.desc}}</p>
