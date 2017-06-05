@@ -15,6 +15,7 @@ const db = mongoose.connection
 // import the languages object and set the default language and text dir for arabic
 const languages = require('./text.js')
 let language = 'arabic'
+let lang = 'ar'
 let text = languages[language]
 let dir = 'rtl'
 
@@ -22,6 +23,7 @@ app.set('port', process.env.PORT || 4444)
 
 app.locals.dir = dir
 app.locals.text = text
+app.locals.lang = lang
 
 const pubPath = path.join(__dirname, './', 'public')
 
