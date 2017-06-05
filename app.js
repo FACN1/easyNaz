@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const hbs = require('express-handlebars')
 const router = require('./routes/index.js')
-const text = require('./text.js').english
+var bodyParser = require('body-parser')
 require('env2')('./config.env')
 const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGODB_URI)
@@ -12,14 +12,28 @@ require('env2')('./config.env')
 const app = express()
 const db = mongoose.connection
 
-app.locals.text = text
+// import the languages object and set the default language and text dir for arabic
+const languages = require('./text.js')
+let language = 'arabic'
+let text = languages[language]
+let dir = 'rtl'
 
 app.set('port', process.env.PORT || 4444)
 
+app.locals.dir = dir
+app.locals.text = text
+
 const pubPath = path.join(__dirname, './', 'public')
 
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
 app.use(favicon(path.join(__dirname, './public', 'favicon.ico')))
 app.use(express.static(pubPath))
+
+app.use((req, res, next) => {
+  res.locals = app.locals
+  next()
+})
 
 app.engine('hbs', hbs({
   defaultLayout: 'main',
