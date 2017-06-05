@@ -2,7 +2,7 @@
  <section >
    <ul>
     {{#each results}}
-     <a {{{serviceInfoLink this._id}}}>
+     <a class="link black" {{{serviceInfoLink this._id}}}>
      <li>
        <div>
           <div>
@@ -11,8 +11,11 @@
           <div>
             <h1>{{this.address}}</h1>
           </div>
-          <div>
-            <h1>{{this.accessOptions}}</h1>
+          <div class="f2">
+            {{#each this.accessOptions}}
+            <i {{{convertToIcons this}}} aria-hidden="true"></i>
+            <span class="sr-only">{{this}}</span>
+            {{/each}}
           </div>
           <div>
             <h1>{{this.open}}</h1>
