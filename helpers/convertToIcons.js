@@ -7,7 +7,7 @@ const convertAccessibility = (access) => {
       return 'foundicon-braille'
     case 'big fonts':
       return 'foundicon-fontsize'
-    case 'Carer':
+    case 'carer':
       return 'foundicon-person'
     case 'place for guide dog':
       return 'foundicon-guidedog'
@@ -15,8 +15,16 @@ const convertAccessibility = (access) => {
       return 'fa fa-mobile'
     case 'sign language':
       return 'foundicon-asl'
+    case 'good lighting':
+      return 'fa fa-lightbulb-o'
+    case 'wheelchair access':
+      return 'foundicon-wheelchair'
+    case 'disabled parking':
+      return 'fa fa-car'
+    case 'disabled toilets':
+      return 'foundicon-wheelchair'
     default:
-      return []
+      return access
   }
 }
 
