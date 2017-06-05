@@ -14,7 +14,7 @@ const convertAccessibility = (access) => {
     case 'sms messaging':
       return "class='fa fa-mobile'"
     case 'sign language':
-      return "class='fa fa-american-sign-language-interpreting'"
+      return "class='foundicon-asl'"
     case 'good lighting':
       return "class='fa fa-lightbulb-o'"
     case 'wheelchair access':

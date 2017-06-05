@@ -39,6 +39,46 @@
   content: "\f002";
 }
 
+.foundicon-eject:before {
+  content: "\f003";
+}
+
+.foundicon-view-mode:before {
+  content: "\f004";
+}
+
+.foundicon-eyeball:before {
+  content: "\f005";
+}
+
+.foundicon-asl:before {
+  content: "\f006";
+}
+
+.foundicon-person:before {
+  content: "\f007";
+}
+
+.foundicon-question:before {
+  content: "\f008";
+}
+
+.foundicon-adult:before {
+  content: "\f009";
+}
+
+.foundicon-child:before {
+  content: "\f00a";
+}
+
+.foundicon-glasses:before {
+  content: "\f00b";
+}
+
+.foundicon-cc:before {
+  content: "\f00c";
+}
+
 .foundicon-blind:before {
   content: "\f00d";
 }
@@ -47,10 +87,46 @@
   content: "\f00e";
 }
 
+.foundicon-iphone-home:before {
+  content: "\f00f";
+}
+
+.foundicon-w3c:before {
+  content: "\f010";
+}
+
+.foundicon-css:before {
+  content: "\f011";
+}
+
+.foundicon-key:before {
+  content: "\f012";
+}
+
 .foundicon-hearing-impaired:before {
   content: "\f013";
 }
 
+.foundicon-male:before {
+  content: "\f014";
+}
+
+.foundicon-female:before {
+  content: "\f015";
+}
+
+.foundicon-network:before {
+  content: "\f016";
+}
+
 .foundicon-guidedog:before {
   content: "\f017";
+}
+
+.foundicon-universal-access:before {
+  content: "\f018";
+}
+
+.foundicon-elevator:before {
+  content: "\f019";
 }
