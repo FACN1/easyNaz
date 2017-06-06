@@ -3,6 +3,7 @@ const express = require('express')
 const hbs = require('express-handlebars')
 const router = require('./routes/index.js')
 const text = require('./text.js').english
+const convertToIcons = require('./helpers/convertToIcons.js')
 require('env2')('./config.env')
 const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGODB_URI)
@@ -32,7 +33,8 @@ app.engine('hbs', hbs({
     },
     mapSrcLink: () => {
       return `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_API}&callback=_myMap`
-    }
+    },
+    convertToIcons: convertToIcons
   }
 }))
 
