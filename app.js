@@ -46,9 +46,9 @@ app.engine('hbs', hbs({
     convertToIcons: convertToIcons,
     chooseBack: (dir) => {
       if (dir === 'ltr') {
-        return 'fa fa-arrow-left'
+        return 'fa fa-arrow-left fl'
       } else {
-        return 'fa fa-arrow-right'
+        return 'fa fa-arrow-right fr'
       }
     }
   }
