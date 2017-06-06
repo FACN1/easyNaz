@@ -1,26 +1,50 @@
-<section class="">
+<section class="white fixed top-0 mb3">
   <div class="">
     <a href="/" aria-label={{text.back}}><img src="./assets/icons/BACK_btn.svg" ></a>
   </div>
-  <div class="">
-    <h2>{{text.serviceQuesion}}</h2>
+  <section class="tc mt5 mb2 pa">
+    <h2 class="ma0">{{text.serviceQuesion}}</h2>
+  </section>
+  <div id="filter-buttons" class="w-100 tc mt3 f2">
+    <div class="w-100 cf pv1 ph3">
+      <div class="fl cf w-33 tc pa1">
+        <button type="button" class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow" data-storageid="services" aria-pressed="false" aria-label='{{text.food}}' title='{{text.food}}'></button>
+      </div>
+      <div class="fl cf w-33 tc pa1">
+        <button type="button" class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow" data-storageid="services" aria-pressed="false" aria-label='{{text.sport}}' title='{{text.sport}}'></button>
+      </div>
+      <div class="fl cf w-33 tc pa1">
+        <button type="button" class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow fa fa-graduation-cap" data-storageid="services" aria-pressed="false" aria-label='{{text.education}}' title='{{text.education}}'></button>
+      </div>
+    </div>
+    <div class="w-100 cf pv1 ph3">
+      <div class="fl cf w-33 tc pa1">
+        <button type="button" class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow" data-storageid="services" aria-pressed="false" aria-label='{{text.health}}' title='{{text.health}}'></button>
+      </div>
+      <div class="fl cf w-33 tc pa1">
+        <button type="button" class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow" data-storageid="services" aria-pressed="false" aria-label='{{text.municipal}}' title='{{text.municipal}}'></button>
+      </div>
+      <div class="fl cf w-33 tc pa1">
+        <button type="button" class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow fa fa-shopping-bag" data-storageid="services" aria-pressed="false" aria-label='{{text.fashion}}' title='{{text.fashion}}'></button>
+      </div>
+    </div>
+    <div class="w-100 cf pv1 ph3">
+      <div class="fl cf w-33 tc pa1">
+        <button type="button" class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow" data-storageid="services" aria-pressed="false" aria-label='{{text.construction}}' title='{{text.construction}}'></button>
+      </div>
+      <div class="fl cf w-33 tc pa1">
+        <button type="button" class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow" data-storageid="services" aria-pressed="false" aria-label='{{text.it}}' title='{{text.it}}'></button>
+      </div>
+      <div class="fl cf w-33 tc pa1">
+        <button type="button" class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow" data-storageid="services" aria-pressed="false" aria-label='{{text.tourism}}' title='{{text.tourism}}'></button>
+      </div>
+    </div>
   </div>
-  <div id="filter-buttons" class="">
-    <button type="button" data-storageid="services" aria-pressed="false" title='{{text.food}}'>{{text.food}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false" title='{{text.sport}}'>{{text.sport}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false" title='{{text.education}}'>{{text.education}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false" title='{{text.health}}'>{{text.health}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false" title='{{text.municipal}}'>{{text.municipal}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false" title='{{text.fashion}}'>{{text.fashion}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false" title='{{text.construction}}'>{{text.construction}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false" title='{{text.it}}'>{{text.it}}</button>
-    <button type="button" data-storageid="services" aria-pressed="false" title='{{text.tourism}}'>{{text.tourism}}</button>
-  </div>
-  <section>
-    <p>{{text.filtersChosen}}</p>
+  <section class="mt3 mb5">
+    <p class="sr-only">{{text.filtersChosen}}</p>
     <div id="filters"></div>
   </section>
-  <div class="">
-    <a href='' id='result-link' aria-label={{text.submit}}>{{text.submit}}</a>
-  </div>
+  <section class="tc w-100 pv2">
+    <a href='' class="f5 grow no-underline shadow-5 br b--black-30 br-pill ph5 pv3 b dib black bg-near-white" id='result-link' aria-label={{text.submit}}>{{text.submit}}</a>
+  </section>
 </section>
