@@ -51,19 +51,43 @@ const showDb = (Model) => {
 
 // define a basic find function
 const find = (Model, option, callback) => {
-    // we're connected!
-    // below we look for results that contain option in the accessOptions
-    // We should develop this function more
-  Model.find({
-    $and: [
-      {'accessOptions': {$in: option.accessOptions}},
-      {'category': {$in: option.category}}
-    ]
-  }, (err, result) => {
+  Model.aggregate([
+    {$match: {$and: [
+    {'accessOptions': {$in: option.accessOptions}},
+    {'category': {$in: option.category}}
+    ]}},
+  {$unwind: '$accessOptions'},
+  {$unwind: '$category'},
+    {$match: {$and: [
+    {'accessOptions': {$in: option.accessOptions}},
+    {'category': {$in: option.category}}
+    ]}},
+    {$group: {
+      _id: '$_id',
+      counter: {$sum: 1},
+      accessOptions: {$push: '$accessOptions'},
+      category: {'$first': '$category'},
+      name: {'$first': '$name'},
+      loc: {'$first': '$loc'},
+      open: {'$first': '$open'},
+      desc: {'$first': '$desc'},
+      fb: {'$first': '$fb'},
+      website: {'$first': '$website'},
+      phoneNumber: {'$first': '$phoneNumber'},
+      email: {'$first': '$email'}
+    }},
+  {$sort: {counter: -1}}
+  ], (err, result) => {
     if (err) return callback(err)
     callback(result)
   })
 }
+const query = {
+  accessOptions: ['Carer', 'Disabled Parking', 'Big Fonts', 'Audio Recordings'],
+  category: ['Health', 'IT']
+}
+
+find(Business, query, console.log)
 
 module.exports = {
   buildFake,
