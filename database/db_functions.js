@@ -68,7 +68,7 @@ const find = (Model, option, callback) => {
       accessOptions: {$push: '$accessOptions'},
       category: {'$first': '$category'},
       name: {'$first': '$name'},
-      loc: {'$first': '$loc'},
+      address: {'$first': '$address'},
       open: {'$first': '$open'},
       desc: {'$first': '$desc'},
       fb: {'$first': '$fb'},
@@ -82,12 +82,6 @@ const find = (Model, option, callback) => {
     callback(result)
   })
 }
-const query = {
-  accessOptions: ['Carer', 'Disabled Parking', 'Big Fonts', 'Audio Recordings'],
-  category: ['Health', 'IT']
-}
-
-find(Business, query, console.log)
 
 module.exports = {
   buildFake,
