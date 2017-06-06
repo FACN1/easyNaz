@@ -17,11 +17,13 @@ var filterListener = function () {
     // check if the filter is already in local storage.
     // if false, push the innerHTML in to the filters array
     // if true, remove the innerHTML clicked from filters array
-    var index = filtersArray.indexOf(event.target.innerHTML)
+    var index = filtersArray.indexOf(event.target.title)
     if (index === -1) {
-      filtersArray.push(event.target.innerHTML)
+      filtersArray.push(event.target.title)
+      event.target.classList.add('green')
     } else {
       filtersArray.splice(index, 1)
+      event.target.classList.remove('green')
     }
     // add refresh the local storage with the new checked or unchecked button
     localStorage.setItem(event.target.dataset.storageid, filtersArray)
@@ -60,7 +62,6 @@ function renderFilters (domId) {
 var filterButtons = document.getElementById('filter-buttons')
 if (filterButtons) {
   var buttons = filterButtons.querySelectorAll('button')
-  console.log(buttons)
   // add event listener to each button
   buttons.forEach(function (button) {
     button.addEventListener('click', filterListener())
