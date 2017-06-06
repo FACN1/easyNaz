@@ -4,7 +4,8 @@ module.exports = {
     help: 'Help',
     filtersChosen: 'Filter Chosen',
     submit: 'Get Results',
-    next: 'Go to the next page',
+    nextAria: 'go to the next page',
+    next: 'Next',
     back: 'go back to the previous page',
     homePage: 'Go-back-to-the-Start',
     serviceTitle: 'Services Page',
@@ -21,18 +22,29 @@ module.exports = {
     // Services page
     serviceQuesion: 'What kind of service are you looking for',
     food: 'Food',
-    shopping: 'Shopping',
-    religion: 'Religion',
+    sport: 'Sport',
+    education: 'Education',
     health: 'Health',
-    viewPoints: 'View Points',
-    nature: 'Nature',
-    museums: 'Museums'
+    municipal: 'Municipal',
+    fashion: 'Fashion',
+    construction: 'Construction',
+    it: 'IT',
+    tourism: 'Tourism',
+    // Service Info Page
+    accessTitle: 'Accessibility options',
+    address: 'Address',
+    desc: 'Description ',
+    opens: 'Opening Hours ',
+    contact: 'Contact details',
+    phone: 'Phone Number ',
+    email: 'Email '
   },
   arabic: { // General
     mainTitle: 'easy Naz',
     help: ' مساعده',
     filtersChosen: 'الامكانيات المختارة ',
     submit: 'اعرض النتائج ',
+    nextAria: ' اذهب الى الصفحه التالية',
     next: 'التالي ',
     back: 'العوده صفحه الى الوراء ',
     homePage: 'العوده الى الصفحه الرئيسيه ',
@@ -51,11 +63,21 @@ module.exports = {
     // Services page
     serviceQuesion: 'ما نوع الخدمة او الخدمات التي تبحث عنها ',
     food: 'طعام',
-    shopping: 'مشتريات',
-    religion: 'ديانات',
+    sport: 'ترفيه ورياضة',
+    education: ' تربيه وتعليم',
     health: 'صحة',
-    viewPoints: 'مناظر',
-    nature: 'طبيعة',
-    museums: 'متاحف'
+    municipal: 'مكاتب حكومية وبلدية',
+    fashion: 'ازياء',
+    construction: 'بناء وصيانه',
+    it: 'حاسوب وانترنت',
+    tourism: 'سياحة وسفر',
+    // Service Info Page
+    accessTitle: 'الخدمات المتاحة ',
+    address: 'العنوان',
+    desc: 'تفاصيل ',
+    opens: ' ساعات العمل ',
+    contact: 'للتواصل ',
+    phone: 'رقم الهاتف ',
+    email: ' الايميل '
   }
 }

@@ -1,21 +1,18 @@
 const convertoption = (item) => {
   item = item.toLowerCase()
-  var options = []
-  if (item === 'visual') {
-    options = ['Audio Recordings', 'Braille', 'Big Fonts', 'Carer', 'Place for Guide Dog', 'SMS messaging']
+  switch (item) {
+    case 'visual':
+      return ['Audio Recordings', 'Braille', 'Big Fonts', 'Carer', 'Place for Guide Dog', 'SMS messaging']
+    case 'aural':
+      return ['Sign Language']
+    case 'mental':
+      return ['Good Lighting', 'Carer']
+    case 'physical':
+      return ['WheelChair Access', 'Disabled Parking', 'Disabled Toilets', 'Carer']
+    default:
+      return []
   }
-  if (item === 'aural') {
-    options = ['Sign Language']
-  }
-  if (item === 'mental') {
-    options = ['Good Lighting', 'Carer']
-  }
-  if (item === 'physical') {
-    options = ['WheelChair Access', 'Disabled Parking', 'Disabled Toilets', 'Carer']
-  }
-  return options
 }
-
 const convertarray = (array) => {
   var wholearr = []
   array.forEach((element) => {

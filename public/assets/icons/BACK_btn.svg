@@ -3,7 +3,7 @@
     <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
     <defs></defs>
     <g id="current-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="choose_location" transform="translate(-16.000000, -16.000000)" fill="#FFFFFF">
+        <g id="choose_location" transform="translate(-16.000000, -16.000000)" fill="#000000">
             <g id="BACK_btn" transform="translate(16.000000, 16.000000)">
                 <text id="Back" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="20">
                     <tspan x="28" y="16">Back</tspan>
