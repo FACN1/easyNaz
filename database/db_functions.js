@@ -56,8 +56,8 @@ const find = (Model, option, callback) => {
     {'accessOptions': {$in: option.accessOptions}},
     {'category': {$in: option.category}}
     ]}},
-  {$unwind: '$accessOptions'},
-  {$unwind: '$category'},
+    {$unwind: '$accessOptions'},
+    {$unwind: '$category'},
     {$match: {$and: [
     {'accessOptions': {$in: option.accessOptions}},
     {'category': {$in: option.category}}
