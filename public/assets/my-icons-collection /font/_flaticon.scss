@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 06/06/2017 09:13
+    Creation date: 06/06/2017 14:34
     */
 
     @font-face {
@@ -36,6 +36,12 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-people:before { content: "\f100"; }
+    .flaticon-worker-of-construction-working-with-a-shovel-beside-material-pile:before { content: "\f100"; }
+.flaticon-city-hall-silhouette:before { content: "\f101"; }
+.flaticon-airplane-flight-in-circle-around-earth:before { content: "\f102"; }
+.flaticon-productivity:before { content: "\f103"; }
     
-    $font-Flaticon-people: "\f100";
+    $font-Flaticon-worker-of-construction-working-with-a-shovel-beside-material-pile: "\f100";
+    $font-Flaticon-city-hall-silhouette: "\f101";
+    $font-Flaticon-airplane-flight-in-circle-around-earth: "\f102";
+    $font-Flaticon-productivity: "\f103";
