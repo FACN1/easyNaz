@@ -52,6 +52,7 @@ function renderFilters (domId) {
     // loop through filters, adding to the div a p for each one
     allFilters.forEach(function (filter) {
       var element = document.createElement('p')
+      element.classList.add('dib', 'ma1', 'pa1', 'f7', 'br1', 'bg-light-gray', 'bg--black-10', 'black')
       element.innerHTML = filter
       section.appendChild(element)
     })

@@ -1,32 +1,26 @@
-  <section class="h-100 mb3 fixed top-0">
-    <section class="w-100 tc f3 ">
-      <div class="b--none pa0 f7 near-white ">
-        <h2>{{text.disabilitiesPrompt}}</h2>
-      </div>
+  <section class="white">
+    <section class="tc mt5 mb2 pa1">
+        <h2 class="ma0">{{text.disabilitiesPrompt}}</h2>
     </section>
-    <section class="w-100 tc mt4">
-      <div id="filter-buttons" class="">
-        <div class="w-100 cf pv1">
-          <div class="fl cf w-50 tc pv2 f1">
-            <button class ="br-100 pa1 ba circle shadow-5 grow fa fa-blind" data-storageid="disability" type="button" aria-pressed="false" aria-label='{{text.visual}}' title='{{text.visual}}'></button>
+    <section id="filter-buttons" class="w-100 tc mt3 f2">
+        <div class="w-100 cf pv1 ph3">
+          <div class="fl cf w-25 tc pa1">
+            <button class ="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow fa fa-blind" data-storageid="disability" type="button" aria-pressed="false" aria-labelledby='{{text.visual}}' title='{{text.visual}}'></button>
           </div>
-          <div class="fl cf w-33 tc pv2 f1">
-            <button class="br-100 pa1 ba b--black-10 circle shadow-5 grow fa fa-wheelchair" data-storageid="disability" type="button" aria-pressed="false" aria-label='{{text.physical}}' title='{{text.physical}}'></button>
+          <div class="fl cf w-25 tc pa1">
+            <button class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow fa fa-wheelchair" data-storageid="disability" type="button" aria-pressed="false" aria-label='{{text.physical}}' title='{{text.physical}}'></button>
+          </div>
+          <div class="fl cf w-25 tc pa1">
+            <button class="br-100 b--silver pa1 ba bg-light-gray circle shadow-5 grow fa fa-deaf" data-storageid="disability" type="button" aria-pressed="false" aria-label='{{text.aural}}' title='{{text.aural}}'></button>
+          </div>
+          <div class="fl cf w-25 tc pa1">
+            <button class="br-100 b--silver pa1 ba bg-light-gray  circle shadow-5 grow flaticon-people" data-storageid="disability" type="button" aria-pressed="false" aria-label='{{text.mental}}' title='{{text.mental}}'></button>
           </div>
         </div>
-        <div class="w-100 cf pv1 f1">
-          <div class="fl cf w-50 tc">
-            <button class="br-100 pa1 ba b--black-10 circle shadow-5 grow fa fa-deaf" data-storageid="disability" type="button" aria-pressed="false" aria-label='{{text.aural}}' title='{{text.aural}}'></button>
-          </div>
-          <div class="fl cf w-33 tc f1">
-            <button class="br-100 pa1 ba b--black-10 circle shadow-5 grow f1 flaticon-people" data-storageid="disability" type="button" aria-pressed="false" aria-label='{{text.mental}}' title='{{text.mental}}'></button>
-          </div>
-        </div>
-      </div>
     </section>
-    <section class="">
-      <p>{{text.filtersChosen}}</p>
-      <div id="filters"></div>
+    <section class="mt3 mb5">
+      <p class="sr-only">{{text.filtersChosen}}</p>
+      <div id="filters" class="pa1"></div>
     </section>
     <section class="tc w-100 pv2">
       <a href="services" class="link dim ba br-pill bw1 f4 our-purple b pv3 ph5 b--black-30 bg-near-white" aria-label={{text.nextAria}}>{{text.next}}</a>
