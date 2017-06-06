@@ -18,7 +18,7 @@ module.exports = (req, res) => {
   } else {
     serviceQueries = ['Food', 'Sport', 'Education', 'Health', 'Municipal', 'Fashion', 'Construction', 'IT', 'Tourism']
   }
-// fake queries to use this data from mockData
+
   const queries = {
     accessOptions: disabilityQueries,
     category: serviceQueries
