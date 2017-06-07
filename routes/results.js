@@ -4,7 +4,7 @@ module.exports = (req, res) => {
   // format the disability choices for database, choose all if none selected
   const disabilityOption = req.query.disability
   let disabilityQueries
-  if (disabilityOption) {
+  if (disabilityOption && (disabilityOption !== 'null')) {
     const disabilityArray = disabilityOption.split(',')
     disabilityQueries = convertFunctions.convertarray(disabilityArray)
   } else {
@@ -13,7 +13,7 @@ module.exports = (req, res) => {
   // format the service choices
   const serviceOption = req.query.services
   let serviceQueries
-  if (serviceOption) {
+  if (serviceOption && (serviceOption !== 'null')) {
     serviceQueries = convertFunctions.capitalise(serviceOption).split(',')
   } else {
     serviceQueries = ['Food', 'Sport', 'Education', 'Health', 'Municipal', 'Fashion', 'Construction', 'IT', 'Tourism']
