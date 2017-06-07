@@ -1,0 +1,12 @@
+.circle {
+  height: 4rem;
+  width: 4rem;
+}
+
+.bg-color{
+  background:linear-gradient(-180deg, #7e65d1 0%, #c8b4f2 100%);
+}
+
+.h3-5 {
+  height: 6rem;
+}

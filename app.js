@@ -43,7 +43,14 @@ app.engine('hbs', hbs({
     mapSrcLink: () => {
       return `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_API}&callback=_myMap`
     },
-    convertToIcons: convertToIcons
+    convertToIcons: convertToIcons,
+    chooseBack: (dir) => {
+      if (dir === 'ltr') {
+        return 'fa fa-arrow-left fl'
+      } else {
+        return 'fa fa-arrow-right fr'
+      }
+    }
   }
 }))
 

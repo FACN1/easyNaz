@@ -17,11 +17,13 @@ var filterListener = function () {
     // check if the filter is already in local storage.
     // if false, push the innerHTML in to the filters array
     // if true, remove the innerHTML clicked from filters array
-    var index = filtersArray.indexOf(event.target.innerHTML)
+    var index = filtersArray.indexOf(event.target.title)
     if (index === -1) {
-      filtersArray.push(event.target.innerHTML)
+      filtersArray.push(event.target.title)
+      event.target.classList.add('green')
     } else {
       filtersArray.splice(index, 1)
+      event.target.classList.remove('green')
     }
     // add refresh the local storage with the new checked or unchecked button
     localStorage.setItem(event.target.dataset.storageid, filtersArray)
@@ -50,6 +52,7 @@ function renderFilters (domId) {
     // loop through filters, adding to the div a p for each one
     allFilters.forEach(function (filter) {
       var element = document.createElement('p')
+      element.classList.add('dib', 'ma1', 'pa1', 'f7', 'br1', 'bg-light-gray', 'bg--black-10', 'black')
       element.innerHTML = filter
       section.appendChild(element)
     })
@@ -57,12 +60,11 @@ function renderFilters (domId) {
 }
 
 // select the different filter buttons (if they are on the page)
-var filterButtons = document.getElementById('filter-buttons').children
+var filterButtons = document.getElementById('filter-buttons')
 if (filterButtons) {
-  // convert this to actual array from 'array-like' object
-  var filterButtonsArray = [].slice.call(filterButtons)
+  var buttons = filterButtons.querySelectorAll('button')
   // add event listener to each button
-  filterButtonsArray.forEach(function (button) {
+  buttons.forEach(function (button) {
     button.addEventListener('click', filterListener())
   })
 }
