@@ -11,7 +11,8 @@ module.exports = (req, res) => {
         else {
           res.render('serviceInfo', {
             service: service,
-            latlng: coordinates
+            latlng: coordinates,
+            back: req.headers.referer
           })
         }
       })
