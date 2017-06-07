@@ -1,27 +1,24 @@
  <section class="w-100 tc white mb3">
-   <ul>
+   <ul class="pa0 ma0">
     {{#each results}}
-     <a class="link black" {{{serviceInfoLink this._id}}}>
-     <li class="list tc pt6 ma1 br2 {{bgImg this.category}}">
-       <h1></h1>
-       <div>
-          <div>
-            <h1 class="ma1 f4">{{this.name}}</h1>
+     <a class="link black pa0 ma0" {{{serviceInfoLink this._id}}}>
+     <li class="list tc ma0 pa0 pt6 bb b--white {{bgImg this.category}} ">
+       <div class="bg-black-50 white ba br2 b--transparent ma0 pa0">
+          <div class="dib w-40 ma0 pa0 ">
+            <h1 class="ma1 f4 ">{{this.name}}</h1>
+            <h1 class="ma0 f6 ">{{this.address}}</h1>
           </div>
-          <div>
-            <h1 class="ma0 f6">{{this.address}}</h1>
-          </div>
-          <div>
-            <h1 class="ma0 f6 ">{{this.category}}</h1>
-          </div>
-          <div class="f2">
+          <div class="f4 dib w-40 ma0 pa0 ">
+            <h1 class="ma0 f6">{{this.category}}</h1>
             {{#each this.accessOptions}}
-            <i {{{convertToIcons this}}} aria-hidden="true" title="{{{this}}}"></i>
-            <span class="sr-only">{{this}}</span>
+            <div class="dib pt1 h2 w2 br-100 bg-white black ma1">
+              <i {{{convertToIcons this}}} aria-hidden="true" title="{{{this}}}"></i>
+              <span class="sr-only">{{this}}</span>
+            </div>
             {{/each}}
           </div>
           <div>
-            <h1>{{this.open}}</h1>
+            <!-- <h1>{{this.open}}</h1> -->
           </div>
        </div>
      </li>
