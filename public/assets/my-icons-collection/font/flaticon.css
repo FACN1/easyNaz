@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 06/06/2017 14:34
+  	Creation date: 07/06/2017 16:52
   	*/
 
 @font-face {
@@ -27,7 +27,13 @@
 font-style: normal;
 }
 
-.flaticon-worker-of-construction-working-with-a-shovel-beside-material-pile:before { content: "\f100"; }
-.flaticon-city-hall-silhouette:before { content: "\f101"; }
-.flaticon-airplane-flight-in-circle-around-earth:before { content: "\f102"; }
-.flaticon-productivity:before { content: "\f103"; }
+.flaticon-speaker-filled-audio-tool:before { content: "\f100"; }
+.flaticon-text-font:before { content: "\f101"; }
+.flaticon-disabled:before { content: "\f102"; }
+.flaticon-deaf-sign-language:before { content: "\f103"; }
+.flaticon-wheelchair-access:before { content: "\f104"; }
+.flaticon-guide-dog:before { content: "\f105"; }
+.flaticon-worker-of-construction-working-with-a-shovel-beside-material-pile:before { content: "\f106"; }
+.flaticon-city-hall-silhouette:before { content: "\f107"; }
+.flaticon-airplane-flight-in-circle-around-earth:before { content: "\f108"; }
+.flaticon-productivity:before { content: "\f109"; }
