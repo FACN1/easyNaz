@@ -50,6 +50,10 @@ app.engine('hbs', hbs({
       } else {
         return 'fa fa-arrow-right fr'
       }
+    },
+    bgImg: (name) => {
+      name = name.toLowerCase().replace(/\s/g, '-')
+      return `bg-${name}`
     }
   }
 }))
