@@ -1,18 +1,18 @@
-
- <section >
+ <section class="w-100 tc white mb3">
    <ul>
     {{#each results}}
      <a class="link black" {{{serviceInfoLink this._id}}}>
-     <li>
+     <li class="list tc pt6 ma1 br2 {{bgImg this.category}}">
+       <h1></h1>
        <div>
           <div>
-            <h1>{{this.name}}</h1>
+            <h1 class="ma1 f4">{{this.name}}</h1>
           </div>
           <div>
-            <h1>{{this.address}}</h1>
+            <h1 class="ma0 f6">{{this.address}}</h1>
           </div>
           <div>
-            <h1>{{this.category}}</h1>
+            <h1 class="ma0 f6 ">{{this.category}}</h1>
           </div>
           <div class="f2">
             {{#each this.accessOptions}}
