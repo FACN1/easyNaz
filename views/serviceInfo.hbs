@@ -1,24 +1,49 @@
-<section class="">
+<section class="tc w-100 white">
+  <div class="mt4 pt2 f3 mh2 fixed top-0">
+    <a href="{{{back}}}" class="near-white dim" aria-label={{text.back}}><i aria-hidden="true" class="{{{chooseBack dir}}}"></i></a>
+  </div>
   <div class=" ">
-    <h1 class="ma0">{{service.name}}</h1>
-    <h2>{{text.address}} - {{service.address}}</h2>
-    <h3 class="">{{text.accessTitle}}</h3>
-    <ul class="pa0 f2">
-      {{#each service.accessOptions}}
-      <i {{{convertToIcons this}}} aria-hidden="true" title="{{{this}}}"></i>
-      <span class="sr-only">{{this}}</span>
-      {{/each}}
-    </ul>
-    <p>{{text.desc}}</p><p>{{service.desc}}</p>
-    <p>{{text.opens}}</p><p>{{service.open}}</p>
-    <h2>{{text.contact}}</h2>
-    <p>{{text.phone}}</p><p>{{service.phoneNumber}}</p>
-    <p>{{text.email}}</p><p>{{service.email}}</p>
-    <div id="googleMap" style="width:100%;height:400px;" data-lat={{latlng.lat}} data-lng={{latlng.lng}} data-name={{service.name}}></div>
-    <section class="">
-      <a href="https://www.facebook.com"><i class="fa fa-facebook link dim black " title='Link to Facebook Page'></i></a>
-      <a href="https://www.instagram.com"><i class="fa fa-instagram link dim black " title='Link to Instagram Page'></i></a>
-    </section>
+    <div class="vh-33 pt6 bg-liwan">
+      <div class="bg-black-50 white ba br2 b--transparent ma0 pa0">
+        <div class="dib w-40 ma0 pa0">
+          <h2 class="ma1 f4">{{service.name}}</h1>
+          <h2 class="ma0 f6">{{service.address}}</h2>
+        </div>
+        <div class="dib w-40">
+          <h3 class="sr-only">{{text.accessTitle}}</h3>
+          <ul class="pa0 f4 black w-100 tc">
+            {{#each service.accessOptions}}
+            <div class="dib pt1 h2 w2 br-100 bg-white ">
+              <i {{{convertToIcons this}}} aria-hidden="true" title="{{{this}}}"></i>
+              <span class="sr-only">{{this}}</span>
+            </div>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-near-white black">
+      <div class="">
+        <p class="sr-only">{{text.desc}}</p><p  class="dib">{{service.desc}}</p>
+      </div>
+      <div class="">
+        <p class="b dib mh2">{{text.opens}}</p><p class="dib">{{service.open}}</p>
+      </div>
+      <h2 class="sr-only">{{text.contact}}</h2>
+      <div class="">
+        <p  class="b dib mh2">{{text.phone}}</p><p class="dib">{{service.phoneNumber}}</p>
+      </div>
+      <div class="">
+        <p  class="b dib mh2">{{text.email}}</p><p class="dib">{{service.email}}</p>
+      </div>
+      <section class="f3">
+        <a href="https://www.facebook.com" aria-label="{{{text.facebook}}}"><i class="fa fa-facebook link dim black" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com" aria-label="{{{text.instagram}}}"><i class="fa fa-instagram link dim black" aria-hidden="true"></i></a>
+      </section>
+      <div id="googleMap" style="width:100%;height:400px;" data-lat={{latlng.lat}} data-lng={{latlng.lng}} data-name={{service.name}}></div>
+      <div class="h4">
+
+      </div>
   </div>
 </section>
 
