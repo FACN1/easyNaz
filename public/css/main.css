@@ -15,45 +15,45 @@
 
 .bg-construction {
   background: url("../img/construction.jpg") 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-education {
   background: url("../img/education.jpg") 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-fashion {
   background: url("../img/fashion.jpg") 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-food {
   background: url("../img/food.jpg") 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-health {
   background: url("../img/health.jpg") 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-IT {
   background: url("../img/IT.jpg") 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bf-municipal {
   background: url("../img/municipal.jpg") 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-sport {
   background: url("../img/sport.jpg") 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-tourism {
   background: url("../img/tourism.jpg") 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
