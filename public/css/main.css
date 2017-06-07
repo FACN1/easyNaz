@@ -10,3 +10,17 @@
 .h3-5 {
   height: 6rem;
 }
+
+.amiri {
+  font-family: 'Amiri', serif;
+}
+
+.bg-color-80{
+  background: #6570D1;
+  opacity: 0.8;
+}
+
+.bg-liwan {
+  background: url("../assets/img/liwan_list_item.png") 0 0 no-repeat;
+  background-size: cover;
+}
