@@ -10,3 +10,50 @@
 .h3-5 {
   height: 6rem;
 }
+
+/*categories images*/
+
+.bg-construction {
+  background: url("../img/construction.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-education {
+  background: url("../img/education.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-fashion {
+  background: url("../img/fashion.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-food {
+  background: url("../img/food.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-health {
+  background: url("../img/health.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-IT {
+  background: url("../img/IT.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bf-municipal {
+  background: url("../img/municipal.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-sport {
+  background: url("../img/sport.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.bg-tourism {
+  background: url("../img/tourism.jpg") 0 0 no-repeat;
+  background-size: contain;
+}
