@@ -1,17 +1,18 @@
-<div name ="help" role="alert" id="show-information" class="pa1 bg-light-silver dn pb4 mb5 w-100 tc bottom-0 fixed z-999 br3">
-  {{text.helpInfo}}
+<div name ="help" role="alert" id="show-information" class="black bg-near-white dn pt2 pb2 mb4-5 w-100 tc bottom-0 fixed br3 b">
+    {{text.helpInfo}}
 </div>
-<nav class="fixed bottom-0 tc pt2 h3 w-100 bg-light-gray z-9999">
-    <div class="dib mr5">
+<nav class="fixed bottom-0 tc pt5 w-100">
+  <div class="bg-black o-60">
+    <div class="dib ml3">
       <a href="/" title="{{text.homePage}}">
-        <img class="h3" src="./assets/icons/home.svg" alt="{{text.homeIcon}}">
+        <i class="f1 fa fa-home white" aria-hidden="true" alt="{{text.homeIcon}}"></i>
       </a>
     </div>
-
-    <div id="help" class="dib h-100 " title="{{text.help}}">
+    <div id="help" class="dib" title="{{text.help}}">
       <a href="#help">
-        <img class="h3" src="./assets/icons/help.svg" alt="{{text.helpIcon}}">
+        <i class="f1 fa fa-info-circle white" aria-hidden="true" alt="{{text.helpIcon}}"></i>
       </a>
     </div>
+  </div>
 </nav>
 <script type="text/javascript" src="./js/navbar.js" ></script>
