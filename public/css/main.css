@@ -11,6 +11,10 @@
   height: 6rem;
 }
 
+.mb-nav {
+  margin-bottom: 3rem;
+}
+
 .amiri {
   font-family: 'Amiri', serif;
 }
