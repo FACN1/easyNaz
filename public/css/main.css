@@ -66,3 +66,7 @@
   background: url("../img/tourism.jpg") 0 0 no-repeat;
   background-size: cover;
 }
+
+.mb4-5 {
+  margin-bottom: 3rem;
+}
