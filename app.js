@@ -52,6 +52,9 @@ app.engine('hbs', hbs({
       }
     },
     bgImg: (name) => {
+      if ((typeof name) === 'object') {
+        name = name[0]
+      }
       name = name.toLowerCase().replace(/\s/g, '-')
       return `bg-${name}`
     }
